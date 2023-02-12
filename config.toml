@@ -1,0 +1,25 @@
+baseURL = ''
+languageCode = 'ro'
+defaultcontentlanguage = "ro"
+title = 'Schitul Mironesti'
+theme = 'schitul-mironesti'
+disableKinds = ["taxonomy", "taxonomyTerm"]
+disableHugoGeneratorInject = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  author = "Manastirea Calui"
+  description = ""
+  keywords = ["Manastirea Calui"]
+  favicon = "favicon/favicon.ico"
+  googleMapsLink = ""
+  googleTagManager = ""
+  robotsActive = "index, follow"
+  googleBotActive = "index,follow,snippet,archive"
+  BotsInactive = "noindex, nofollow"
+  themeColorLight = "#000"
+  themeColorDark = "#fff"
