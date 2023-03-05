@@ -41,7 +41,7 @@ disableHugoGeneratorInject = false
     phone = ""
     fax = ""
     person = ""
-    copyright = "2023 Schitul Mironesti"
+    copyright = "2023 Schitul Mironești"
 
 [menu]
   # Main Menu
