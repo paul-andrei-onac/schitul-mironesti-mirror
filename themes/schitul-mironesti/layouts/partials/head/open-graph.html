@@ -1,0 +1,14 @@
+<link rel="canonical" href='{{ $.Param "open_graph.url" }}'>
+<meta property="og:title" content='{{ .Site.Data.og_image.title }}'>
+<meta property="og:type" content='website'>
+<meta property="og:url" content='{{ .Site.Data.og_image.url }}'>
+
+<meta property="og:image" content='{{ .Site.Data.og_image.image }}'>
+<meta property="og:image:type" content='image/jpg'>
+<meta property="og:image:width" content='1200'>
+<meta property="og:image:height" content='630'>
+<meta property="og:image:alt" content='{{ .Site.Data.og_image.image_alt }}'>
+
+<meta property="og:description" content='{{ .Site.Data.og_image.description }}'>
+<meta property="og:locale" content='{{ .Site.Language }}_{{ upper .Site.Language }}'>
+<meta property="og:site_name" content='{{ .Site.Title }}'>

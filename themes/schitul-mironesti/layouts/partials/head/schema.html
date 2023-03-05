@@ -1,0 +1,43 @@
+{{ if and (not .Site.IsServer) hugo.IsProduction }}
+{{ safeHTML "<script type=\"application/ld+json\">" }}
+  {
+    "@context": "https://schema.org/",
+    "@type": "{{ .Params.schema.type }}",
+    "name": "{{ .Params.schema.name }}",
+    "url": "{{ .Params.schema.url }}",
+    
+    {{ if isset .Params.schema "telephone" }}
+      "telephone": "{{ .Params.schema.telephone }}",
+    {{ end }}
+    
+    {{ if isset .Params.schema "email" }}
+      "email": "{{ .Params.schema.email }}",
+    {{ end }}
+    
+    {{ if isset .Params.schema "logo" }}
+      "logo": "{{ .Params.schema.logo }}",
+    {{ end }}
+    
+    "image": "{{ .Params.schema.image_url }}",
+    "description": "{{ .Params.schema.description }}"
+    
+    {{ if .Type | eq "page" }},
+      "brand": {
+        "@type": "Brand",
+        "name": "{{ .Site.Title }}"
+      },
+      "sku": "{{ .Params.schema.sku }}",
+      "mpn": "{{ .Params.schema.mpn }}",
+      "offers": {
+        "@type": "Offer",
+        "url": "{{ .Params.schema.url }}",
+        "priceCurrency": "RON",
+        "price": "{{ .Params.schema.price }}",
+        "priceValidUntil": "{{ .Params.schema.price_available }}",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    {{ end }}
+  }
+{{ safeHTML "</script>" }}
+{{ end }}

@@ -1,0 +1,20 @@
+{{ define "body_classes" }} gallery-page {{ end }}
+
+{{ define "main"}}
+
+<div class="gallery-wrapper-parent space-top space-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{ partial "titles" . }}
+      </div>
+    </div>
+    <div class="row space-top">
+      <div class="col-12">
+        {{ partial "gallery" . }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

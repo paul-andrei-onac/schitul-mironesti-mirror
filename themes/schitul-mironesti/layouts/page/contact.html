@@ -1,0 +1,47 @@
+{{ define "body_classes" }} contact-page {{ end }}
+
+{{ define "main" }}
+
+<section class="contact-wrapper space-top space-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{ partial "titles" . }}
+      </div>
+    </div>
+    <div class="row align-items-center space-top">
+      <div class="col-md-6 col-lg-5 me-auto">
+        <div class="card  mb-3 mx-auto">
+          <div class="card-header">
+            <h2 class="card-title fw-bold">{{ .Site.Title }}</h2>
+          </div>
+          <div class="card-body">
+            {{ with .Site.Params.footer.contactInfo }}
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <p class="card-text"><span class="fw-bold">Adresa</span>: {{ .address }}</p>
+              </li>
+              <li class="list-group-item">
+                <p class="card-text"><span class="fw-bold">Telefon</span>: {{ .phone }}</p>
+              </li>
+              <li class="list-group-item">
+                <p class="card-text"><span class="fw-bold">Fax</span>: {{ .fax }}</p>
+              </li>
+              <li class="list-group-item">
+                <p class="card-text"><span class="fw-bold">Stareț al Mănăstirii</span>: {{ .person }}</p>
+              </li>
+            </ul>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="ratio ratio-4x3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11446.66079733792!2d26.2480618!3d44.1727597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae19e1128e472f%3A0x7c6cc540ffb3e7d1!2sChurch%20of%20St.%20Nicholas%20Monastery%20Mirone%C5%9Fti!5e0!3m2!1sen!2sro!4v1678025968689!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

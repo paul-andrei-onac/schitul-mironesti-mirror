@@ -1,0 +1,41 @@
+@import "../abstracts/variables";
+
+.nav-pills {
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  .nav-item {
+    .nav-link {
+      background-color: $white;
+      color: $body-color;
+      font-weight: $font-weight-normal;
+      border: 1px solid $body-color;
+      border-radius: 3px;
+
+      &:hover {
+        color: $white;
+        background-color: $secondary;
+        border: 1px solid $secondary;
+      }
+
+      &.active {
+        color: $white;
+        background-color: $secondary;
+        border: 1px solid $secondary;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .nav-pills {
+    gap: 1rem;
+
+    .nav-item {
+      .nav-link {
+        padding: .5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<header class="header-area container-fluid gx-0 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="header-grid mb-2">
+          {{ with .Site.Data.logos }}
+          {{ range $index, $items := .items }}
+            <a href="{{ .url }}" target="_blank">
+              <img class="img-fluid" src="{{ .img }}" alt="{{ .Title }}">
+            </a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          {{ $current := . }}
+          {{ range .Site.Menus.main.ByWeight }}
+            <li class="nav-item">
+              <a class="nav-link {{ if eq $current.RelPermalink .URL }} active {{ end }}" aria-current="{{ if eq $current.RelPermalink .URL }} page {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

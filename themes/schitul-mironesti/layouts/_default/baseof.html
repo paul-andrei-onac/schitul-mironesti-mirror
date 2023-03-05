@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<!--[if lte 8]><html class="pre-ie9" lang="{{ $.Site.Language }}"><![endif]-->
+<!--[if gte IE 9]><!--><html class="no-js" lang="{{ $.Site.Language }}"><!--<![endif]-->
+{{- partial "head" . -}}
+
+<body class='page {{ block "body_classes" . }}{{ end }}'>
+<script>0</script>
+{{ partial "google-tag-manager/gtm-body" . }}
+{{ partial "head/schema" . }}
+
+<!--[if IE]><div class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed" style="z-index: 1000; bottom: 0;">
+  <p onClick="parentNode.remove()">Please use a modern browser for a better browsing experience.
+    <span class="float-right">X</span>
+  </p>
+</div><![endif]-->
+
+{{ partial "header" . }}
+
+<div id="content">
+  {{ block "main" . }}{{ end }}
+</div>
+
+{{- partial "footer" . -}}
+
+</body>
 </html>

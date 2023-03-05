@@ -2,6 +2,35 @@
 
 {{ define "main" }}
 
-<p>Schitul Mironesti</p>
-  
+<section class="homepage-wrapper space-top space-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="homepage-image mb-3">
+          {{ with .Params.page.image }}
+          {{ range $index, $items := first 1 .items }}
+              <img class="img-fluid" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}"> 
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="title-area">
+          {{ with .Params.page }}
+          <h1 class="sec-title">{{ .title | safeHTML }}</h1>
+          {{ end }}
+          <hr class="m-0">
+        </div>
+        <div class="text-area">
+          <div class="py-3">{{ .Content }}</div>
+          <div class="text-center text-lg-start">
+            <a class="btn-prime" href="/proiect1" role="button">Vezi Proiect 1</a>
+            <a class="btn-prime ms-3" href="/proiect2" role="button">Vezi Proiect 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {{ end }}

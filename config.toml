@@ -1,10 +1,10 @@
 baseURL = ''
 languageCode = 'ro'
 defaultcontentlanguage = "ro"
-title = 'Schitul Mironesti'
+title = 'Schitul Mironești'
 theme = 'schitul-mironesti'
 disableKinds = ["taxonomy", "taxonomyTerm"]
-disableHugoGeneratorInject = true
+disableHugoGeneratorInject = false
 
 [markup]
   [markup.goldmark]
@@ -12,9 +12,9 @@ disableHugoGeneratorInject = true
       unsafe = true
 
 [params]
-  author = "Manastirea Calui"
-  description = ""
-  keywords = ["Manastirea Calui"]
+  author = "Schitul Mironești"
+  description = "Biserica Sf. Ierarh Nicolae din Mironești, se află la sud de râul Argeș, în apropierea Mânăstirii Comana, a ruinelelor curții boierești și Conacului Radu Șerbaniserica Sf. Ierarh Nicolae din Mironești, se află la sud de râul Argeș, în apropierea Mânăstirii Comana, a ruinelelor curții boierești și Conacului Radu Șerban"
+  keywords = ["Schitul Mironesti"]
   favicon = "favicon/favicon.ico"
   googleMapsLink = ""
   googleTagManager = ""
@@ -23,3 +23,54 @@ disableHugoGeneratorInject = true
   BotsInactive = "noindex, nofollow"
   themeColorLight = "#000"
   themeColorDark = "#fff"
+
+[params.footer]
+  [params.footer.info]
+  heading = "Investim în viitorul tău! Proiect cofinanțat din Fondul European de Dezvoltare Regională prin Programul Operațional Regional 2014-2020"
+  text = "Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României"
+  [[params.footer.links]]
+    title = "www.inforegio.ro"
+    url = "https://www.inforegio.ro"
+
+  [[params.footer.links]]
+    title = "facebook.com/inforegio.ro"
+    url = "https://facebook.com/inforegio.ro"
+
+  [params.footer.contactInfo]
+    address = "Strada Principală, Mironeşti"
+    phone = ""
+    fax = ""
+    person = ""
+    copyright = "2023 Schitul Mironesti"
+
+[menu]
+  # Main Menu
+  [[menu.main]]
+    name = "Acasă"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Istoric"
+    url = "/istoric/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Proiect 1"
+    url = "/proiect1/"
+    weight = 30
+
+  [[menu.main]]
+    name = "Proiect 2"
+    url = "/proiect2/"
+    weight = 40
+
+  [[menu.main]]
+    name = "Galerie"
+    url = "/galerie/"
+    weight = 50
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 60

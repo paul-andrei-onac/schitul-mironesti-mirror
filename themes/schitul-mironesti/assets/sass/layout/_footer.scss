@@ -1,0 +1,45 @@
+@import "../abstracts/variables";
+
+.footer-wrapper {
+  background-color: $white;
+  padding: 1rem 0;
+
+  .footer-european {
+    text-align: center;
+    color: $primary;
+    font-size: 1.5rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: $primary;
+
+    @include media-breakpoint-down(md) {
+      gap: 1rem;
+    }
+
+    span {
+      &:last-child {
+        display: none;
+      }
+    }
+  
+    a {
+      color: $primary;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  .footer-info {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

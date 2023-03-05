@@ -1,0 +1,56 @@
+{{ define "body_classes" }} proiect-1-page {{ end }}
+
+{{ define "main" }}
+
+<section class="project-wrapper space-top space-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{ partial "titles" . }}
+      </div>
+    </div>
+    <div class="row space-top space-bottom">
+      <div class="col-lg-6">
+        {{ with .Params.page.image }}
+        {{ range $index, $items := first 1 .items }}
+        <img class="img-fluid mb-3" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}"> 
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title fw-bold">DESPRE PROIECT</h5>
+          </div>
+          <div class="card-body">
+            <ol class="list-group list-group-flush">
+              <li class="list-group-item px-0">
+                <p class="mb-0 fw-bold">OBIECT 1 - BISERICA SF. NICOLAE <span class="fw-normal">lucrări de consolidare, restaurare, conservare, refacere finisaje   și instalații; refacere învelitoare și sistem preluare ape pluviale; refacere tâmplării; refacere trotuar de gardă; realizare iluminat arhitectural;</span></p>
+              </li>
+              <li class="list-group-item px-0">
+                <p class="mb-0 fw-bold">OBIECT 2 - TURN CLOPOTNIȚĂ: <span class="fw-normal">propunere turn clopotniță pe latura de sud - pentru facilitarea unui nou acces în sit și amplasare clopot;</span></p>
+              </li>
+              <li class="list-group-item px-0">
+                <p class="mb-0 fw-bold">OBIECT 3 - PANGAR și OBIECT 4 - LUMÂNĂRAR: <span class="fw-normal">propunere corpuri noi de mici dimensiuni, din zidărie de beton și cărămidă, pentru expunerea inventarului local sau media și aprinderea lumânărilor;</span></p>
+              </li>
+              <li class="list-group-item px-0">
+                <p class="mb-0 fw-bold">OBIECT 5 - CORP ANEXĂ: <span class="fw-normal">propunere construcție nouă pentru adăpostirea grupurilor sanitare și cameră tehnică;</span></p>
+              </li>
+              <li class="list-group-item px-0">
+                <p class="mb-0 fw-bold">OBIECT 6 - FOIȘOR: <span class="fw-normal">construcție din lemn, propusă pentru expunerea unui număr limitat de vestigii istorice locale;</span></p>
+              </li>
+              <li class="list-group-item px-0">
+                <p class="mb-0 fw-bold">OBIECT 7 - ÎMPREJMUIRE: <span class="fw-normal">propunere împrejmuire perimetrală din zidărie, plasă bordurată și elemente vegetale, cu punct de acces auto;</span></p>
+              </li>
+              <li class="list-group-item px-0">
+                <p class="mb-0 fw-bold">OBIECT 8 – AMENAJARE EXTERIOARĂ: <span class="fw-normal">propunere care va consta în amenajarea circuitului interior cu alei pietonale, vegetații acoperitoare de sol, plantare arbuști, arbori și sistem minimal de irigare.</span></p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

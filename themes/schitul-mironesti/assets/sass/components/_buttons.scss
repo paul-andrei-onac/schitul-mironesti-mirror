@@ -1,0 +1,25 @@
+@import "../abstracts/variables";
+
+.btn-prime {
+  background-color: $body-color;
+  font-size: 1.2rem;
+  color: $white;
+  font-weight: $font-weight-bold;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background: $secondary;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn-prime {
+    padding: 0.75rem;
+  }
+}

@@ -1,0 +1,31 @@
+{{ define "body_classes" }} istoric-page {{ end }}
+
+{{ define "main"}}
+
+<section class="istoric-wrapper space-top space-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        {{ partial "titles" . }}
+      </div>
+    </div>
+    <div class="row space-top">
+      <div class="col-lg-6">
+        {{ .Content }}
+      </div>
+      <div class="col-lg-6">
+        {{ with .Params.page.image }}
+        {{ range $index, $items := first 2 .items }}
+        <img class="img-fluid mb-3" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}"> 
+        {{ end }}
+        {{ end }}
+        <div class="mt-2 text-center text-lg-start">
+          <a class="btn-prime" href="/proiect1" role="button">Vezi Proiect 1</a>
+          <a class="btn-prime ms-3" href="/proiect2" role="button">Vezi Proiect 2</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

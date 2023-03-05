@@ -1,0 +1,49 @@
+@import "../abstracts/variables";
+
+.arhitecture-wrapper,
+.gallery-wrapper-parent {
+  .gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+
+      &:hover {
+        filter: brightness(70%);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &.style2 {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .arhitecture-wrapper,
+  .gallery-wrapper-parent {
+    .gallery-wrapper {
+
+      &.style2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .arhitecture-wrapper,
+  .gallery-wrapper-parent {
+    .gallery-wrapper {
+      grid-template-columns: auto;
+
+      &.style2 {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}

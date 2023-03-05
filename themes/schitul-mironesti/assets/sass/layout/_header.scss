@@ -1,0 +1,113 @@
+@import "../abstracts/variables";
+
+.header-area {
+  .header-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    padding-bottom: 1rem;
+
+    .navbar-nav {
+      margin: auto;
+      gap: 2rem;
+    
+      li {
+        color: $primary;
+        font-size: 1.5rem;
+        list-style: disc;
+
+        &:first-child {
+          list-style: none;
+        }
+      }
+      
+      .nav-link {
+        color: $primary;
+        font-weight: $font-weight-bold;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $secondary;
+        }
+
+        &.active {
+          color: $secondary;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      padding: 0;
+      width: 100%;
+
+      &:focus {
+        box-shadow: 0 0 0 .2rem $secondary;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .header-area {
+    .navbar {
+      .navbar-nav {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .header-area {
+    .navbar {
+      .navbar-nav {
+        li {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .header-area {
+    .navbar {
+      .navbar-nav {
+        gap: unset;
+        
+        li {
+          font-size: 1rem;
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header-area {
+    .header-grid {
+      img {
+        height: 70px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .header-area {
+    .header-grid {
+      img {
+        height: 50px;
+      }
+    }
+  }
+}

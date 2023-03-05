@@ -1,0 +1,17 @@
+headerLogos: enable
+items:
+  - title: "Uniunea Europeană"
+    url: "https://european-union.europa.eu/index_ro"
+    img: "/logo/ue.png"
+
+  - title: "Guvernul României"
+    url: "https://www.gov.ro/"
+    img: "/logo/guvern.png"
+
+  - title: "Regio"
+    url: "http://regio.adrmuntenia.ro/"
+    img: "/logo/regio.png"
+
+  - title: "Sprijin pentru România"
+    url: "https://www.fonduri-ue.ro/"
+    img: "/logo/instrumente.png"
