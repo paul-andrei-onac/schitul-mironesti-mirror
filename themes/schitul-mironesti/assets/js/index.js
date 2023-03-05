@@ -14,13 +14,12 @@ import 'bootstrap';
 //---------------------------------------------
 
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
-Fancybox.bind('[data-fancybox="gallery"]', {
-  caption: (fancybox, slide) => {
-    const caption = slide.caption || "";
 
-    return `${slide.index + 1} / ${
-      fancybox.carousel?.slides.length
-    } <br /> ${caption}`;
+Fancybox.bind('[data-fancybox="gallery"]', {
+  caption: function (fancybox, carousel, slide) {
+    return (
+      `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+    );
   },
 });
 
