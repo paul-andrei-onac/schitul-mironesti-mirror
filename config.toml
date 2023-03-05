@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://schitul-mironesti.ro'
 languageCode = 'ro'
 defaultcontentlanguage = "ro"
 title = 'Schitul Mironești'

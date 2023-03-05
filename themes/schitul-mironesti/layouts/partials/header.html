@@ -25,7 +25,7 @@
           {{ $current := . }}
           {{ range .Site.Menus.main.ByWeight }}
             <li class="nav-item">
-              <a class="nav-link {{ if eq $current.RelPermalink .URL }} active {{ end }}" aria-current="{{ if eq $current.RelPermalink .URL }} page {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+              <a class="nav-link {{ if eq $current.RelPermalink .URL }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>
