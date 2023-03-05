@@ -1,8 +1,4 @@
 <footer class="footer-wrapper">
 
 
-
-  {{ $script := resources.Get "js/index.js" | js.Build "main.js" | fingerprint }}
-  <script src="{{ $script.RelPermalink }}" async></script>
-
 </footer>
