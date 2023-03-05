@@ -14,13 +14,7 @@
   <meta name="dc.relation" content='{{ .Site.BaseURL }}'>
   {{ partial "head/open-graph" . }}
   
-  {{ if and (not .Site.IsServer) hugo.IsProduction }}
-    <meta name="robots" content='{{ .Site.Params.robotsActive }}'>
-    <meta name="googlebot" content='{{ .Site.Params.googleBotActive }}'>
-  {{ else }}
-    <meta name="robots" content='{{ .Site.Params.BotsInactive }}'>
-    <meta name="googlebot" content='{{ .Site.Params.BotsInactive }}'>
-  {{ end }}
+ 
   
   {{ partial "head/favicon" . }}
   
