@@ -1,26 +1,10 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>{{ .Title }}</title>
-  <meta name="author" content='{{ .Site.Title }}'>
-  <meta name="description" content='{{ if .Params.description }}{{ .Params.description }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}'>
-  
-  {{ $keywords := .Site.Params.keywords }}
-  {{ $mdKeywords := .Params.keywords}}
-  {{ range .Params.keywords }}{{ $keywords = $mdKeywords | append . }}{{ end }}
-  <meta name="keywords" content='{{ if .Params.keywords }}{{ delimit (uniq $keywords) ", " }}{{ else if .Site.Params.keywords }}{{ delimit (uniq $keywords) ", " }}{{ end }}'>
-  
-  <meta name="dc.relation" content='{{ .Site.BaseURL }}'>
-  {{ partial "head/open-graph" . }}
   
  
   
-  {{ partial "head/favicon" . }}
   
   {{ $style := resources.Get "sass/main.scss" | toCSS (dict "targetPath" "main.css" "enableSourceMap" true) | fingerprint | minify }}
   <link rel="stylesheet" href="{{ $style.Permalink | absURL }}" type="text/css">
   
 
-  {{ partial "google-tag-manager/gtm-head" . }}
 </head>
