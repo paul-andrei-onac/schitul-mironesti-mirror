@@ -26,5 +26,5 @@
 
   
   {{ $script := resources.Get "js/index.js" | js.Build "main.js" | fingerprint }}
-  <script src="{{ $script.RelPermalink | absURL }}" async></script>
+  <script type="text/javascript" src="{{ $script.RelPermalink | absURL }}" async></script>
 </footer>
