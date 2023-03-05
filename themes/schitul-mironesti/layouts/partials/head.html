@@ -4,7 +4,7 @@
   
   
   {{ $style := resources.Get "sass/main.scss" | toCSS (dict "targetPath" "main.css" "enableSourceMap" true) | fingerprint | minify }}
-  <link rel="stylesheet" href="{{ $style.Permalink | absURL }}" type="text/css">
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css">
   
 
 </head>
