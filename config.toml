@@ -56,13 +56,13 @@ disableHugoGeneratorInject = false
     weight = 20
 
   [[menu.main]]
-    name = "Proiect 1"
-    url = "/proiect1/"
+    name = "Proiect POR 2014-2020"
+    url = "/proiect-por-2014-2020/"
     weight = 30
 
   [[menu.main]]
-    name = "Proiect 2"
-    url = "/proiect2/"
+    name = "Digitalizare 3D"
+    url = "/digitalizare-3d/"
     weight = 40
 
   [[menu.main]]
