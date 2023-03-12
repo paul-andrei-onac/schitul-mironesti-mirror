@@ -13,7 +13,7 @@ disableHugoGeneratorInject = false
 
 [params]
   author = "Schitul Mironești"
-  description = "Biserica Sf. Ierarh Nicolae din Mironești, se află la sud de râul Argeș, în apropierea Mânăstirii Comana, a ruinelelor curții boierești și Conacului Radu Șerbaniserica Sf. Ierarh Nicolae din Mironești, se află la sud de râul Argeș, în apropierea Mânăstirii Comana, a ruinelelor curții boierești și Conacului Radu Șerban"
+  description = "Biserica Sf. Ierarh Nicolae din Mironești, se află la sud de râul Argeș, în apropierea Mânăstirii Comana."
   keywords = ["Schitul Mironesti"]
   favicon = "favicon/favicon.ico"
   googleMapsLink = ""
@@ -28,6 +28,7 @@ disableHugoGeneratorInject = false
   [params.footer.info]
   heading = "Investim în viitorul tău! Proiect cofinanțat din Fondul European de Dezvoltare Regională prin Programul Operațional Regional 2014-2020"
   text = "Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României"
+  
   [[params.footer.links]]
     title = "www.inforegio.ro"
     url = "https://www.inforegio.ro"
@@ -38,6 +39,7 @@ disableHugoGeneratorInject = false
 
   [params.footer.contactInfo]
     address = "Strada Principală, Mironeşti"
+    city = "Giurgiu"
     phone = ""
     fax = ""
     person = ""
