@@ -13,13 +13,13 @@
       <div class="col-lg-6">
         {{ .Content }}
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 text-center">
         {{ with .Params.page.image }}
         {{ range $index, $items := first 2 .items }}
         <img class="img-fluid mb-3" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}"> 
         {{ end }}
         {{ end }}
-        <div class="mt-2 text-center text-lg-start">
+        <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
           <a class="btn-prime" href="/proiect-smis-126844" role="button">Vezi Proiect SMIS</a>
         </div>
       </div>
