@@ -58,8 +58,8 @@ disableHugoGeneratorInject = false
     weight = 20
 
   [[menu.main]]
-    name = "Proiect POR 2014-2020"
-    url = "/proiect-por-2014-2020/"
+    name = "Proiect SMIS 126844"
+    url = "/proiect-smis-126844/"
     weight = 30
 
   [[menu.main]]
