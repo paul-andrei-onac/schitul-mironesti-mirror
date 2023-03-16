@@ -60,6 +60,10 @@
     .navbar {
       .navbar-nav {
         gap: 1rem;
+
+        li {
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -70,7 +74,7 @@
     .navbar {
       .navbar-nav {
         li {
-          font-size: 1.3rem;
+          font-size: 1rem;
         }
 
         .nav-link {
@@ -89,7 +93,6 @@
         gap: unset;
         
         li {
-          font-size: 1rem;
           list-style: none;
         }
       }
