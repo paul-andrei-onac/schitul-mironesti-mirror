@@ -20,11 +20,41 @@ sitemap:
 page:
   title: "Proiect <span>SMIS</span> 126844"
 
-  image:
-    items:
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/executie/executie-3.jpg"
-        image2x: "/gallery/executie/executie-3@2x.jpg"
+footerTitle: "Pentru informații detaliate despre celelalte programe cofinanțate de Uniunea Europeană, vă invităm să vizitați"
+footerLink: "https://www.fonduri-ue.ro"
 
 ---
+
+**"CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE"**, Cod SMIS 126844
+
+Schitul Mironești, în calitate de beneficiar, implementează proiectul denumit "CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE", Cod SMIS 126844, ca urmare a încheierii contractului de finanțare nr. 4274/23.05.2019 cu Autoritatea de Management Ministerul Dezvoltării Regionale și Administrației Publice prin Organism intermediar Agenția pentru Dezvoltare Regională SUD MUNTENIA. Proiectul este finanțat prin Programul Operațional Regional 2014-2020 Axa prioritară 5 "Îmbunătăţirea mediului urban și conservarea, protecția și valorificarea durabilă a patrimoniului cultural", Prioritatea de investiții 5.1. "Conservarea, protejarea, promovarea și dezvoltarea patrimoniului natural și cultural".
+
+**Obiectivul general** al proiectului este restaurarea, conservarea, protejarea şi menţinerea stilului arhitectonic al Bisericii Sf Nicolae – Schitul Mironești, județul Giurgiu ca premisă a dezvoltării turismului cultural și religios, factor care stimulează dezvoltarea economică a regiunii Sud Muntenia și păstrarea culturii tradiţionale româneşti, respectând principiile dezvoltării durabile şi protecţiei mediului. 
+
+**Obiectivele specifice** ale proiectului sunt: 
+
+1.  **OS1:** Restaurarea și conservarea în următorii 3 ani a Bisericii Sf. Nicolae- Schitul Mironești, ca premisă a creșterii turismului cultural în zona Goștinari - Comana.
+
+2.  **OS2:** Introducerea în următorii 3 ani în minim 2 circuite turistice- unul național și unul internațional, în vederea creșterii numărului de turiști în zonă.
+
+3.  **OS3:** Diversificarea serviciilor cultural-religioase oferite de Schitul Mironești - prin organizarea și desfășurarea a minim 4 evenimente anuale periodice, cu accent pe păstrarea tradițiilor locale.
+
+4.  **OS4:** Întărirea instituțională în următorii 2 ani prin crearea și dezvoltarea unui parteneriat extins pentru creșterea importanței economice și sociale locale.
+
+5.  **OS5:** Creșterea gradului de informare și interes pentru cultură a comunității locale și a populației din zona sud Muntenia.
+
+**Rezultatele așteptate în urma implementării proiectului sunt:**
+
+- creșterea numărului de vizitatori de la 280 în prezent la minim 960 începând cu primul an de exploatare 2021;
+
+- numărul de obiective de patrimoniu restaurate/protejate/conservate: 1 monument restaurat.
+
+Locul de implementare al proiectului este Comuna Goștinari, Str. Principală, Nr. 58 , Jud. Giurgiu.
+
+Data de începere a proiectului este 14 ianuarie 2016 , iar data finalizării proiectului este 31.07.2023.
+
+Valoarea totală a proiectului este 20.660.734,96 lei, din care 20.106.852.20 lei reprezintă suma nerambursabilă. Valoarea eligibilă nerambursabilă din FEDR este de 17.090.824,37 lei și 3.016.027,83 lei este valoarea eligibila nerambursabilă din Bugetul de Stat.
+
+Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă
+
+invităm să vizitaţi [www.fonduri-ue.ro](http://www.fonduri-ue.ro/), precum si site-ul web al Programul Operațional Regional 2014-2020, [www.inforegio.ro](http://www.inforegio.ro/) și pagina de facebook a programului [facebook.com/inforegio.ro](http://facebook.com/inforegio.ro).

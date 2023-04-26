@@ -26,7 +26,7 @@ disableHugoGeneratorInject = false
 
 [params.footer]
   [params.footer.info]
-  heading = "Investim în viitorul tău! Proiect cofinanțat din Fondul European de Dezvoltare Regională prin Programul Operațional Regional 2014-2020"
+  heading = "Investim în viitorul tău! <br>Proiect cofinanțat din Fondul European de Dezvoltare Regională prin Programul Operațional Regional 2014-2020"
   text = "Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României"
   
   [[params.footer.links]]

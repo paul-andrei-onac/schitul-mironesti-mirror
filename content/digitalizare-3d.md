@@ -1,10 +1,10 @@
 ---
-title: "Proiect 2 | Schitul Mironești"
+title: "Digitalizare 3D | Schitul Mironești"
 keywords: ["Schitul Mironesti"]
 date: 2023-01-25T23:41:34+02:00
 draft: false
 type: page
-layout: proiect2
+layout: digitalizare
 sitemap_exclude: false
 
 sitemap:
@@ -17,13 +17,6 @@ sitemap:
 # Page
 #----------------------------------------------------/
 page:
-  title: "Proiect <span>2</span>"
-
-  image:
-    items:
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/executie/executie-4.jpg"
-        image2x: "/gallery/executie/executie-4@2x.jpg"
+  title: "Digitalizare <span>3D</span>"
 
 ---
