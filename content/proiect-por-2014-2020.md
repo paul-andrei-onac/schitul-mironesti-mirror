@@ -25,9 +25,26 @@ footerLink: "https://www.fonduri-ue.ro"
 
 ---
 
-**"CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE"**, Cod SMIS 126844
+**Numele proiectului: "CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE"**
+
+Contract de finanțare nr. 4274 / 23.05.2019, cod SMIS 126844
+
+Denumirea beneficiarului: **Schitul Mironești**
+
+Proiect finantat prin PROGRAMUL OPERAȚIONAL REGIONAL 2014-2020, Prioritatea de investiții 5.1 – Îmbunătăţirea mediului urban si conservarea, protectia si valorificare durabila a patrimoniului cultural, Prioritatea de Investiții 5.1. - Conservarea, protejarea, promovarea si dezvoltarea patrimoniului natural si cultural.
+
+- Autoritatea de Management: **Ministerul Dezvoltării Regionale și Administrației Publice**
+- Organism Intermediar: **Agenția pentru Dezvoltare Regională Sud Muntenia**
+- Perioada de implementare a proiectului: **91 luni**
+- Data de începere a proiectului: **14.01.2016**
+- Data de finalizare a proiectului: **31.07.2023**
+- Locul de implementare al proiectului este: **Comuna Goștinari, Str. Principală, Nr. 58 , Jud. Giurgiu.**
+- Valoarea totală a proiectului: **20.660.734,96 lei**
+- Contribuția Uniunii Europene: **17.090.824,37 lei**
 
 Schitul Mironești, în calitate de beneficiar, implementează proiectul denumit "CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE", Cod SMIS 126844, ca urmare a încheierii contractului de finanțare nr. 4274/23.05.2019 cu Autoritatea de Management Ministerul Dezvoltării Regionale și Administrației Publice prin Organism intermediar Agenția pentru Dezvoltare Regională SUD MUNTENIA. Proiectul este finanțat prin Programul Operațional Regional 2014-2020 Axa prioritară 5 "Îmbunătăţirea mediului urban și conservarea, protecția și valorificarea durabilă a patrimoniului cultural", Prioritatea de investiții 5.1. "Conservarea, protejarea, promovarea și dezvoltarea patrimoniului natural și cultural".
+
+**Obiectivele proiectului:**
 
 **Obiectivul general** al proiectului este restaurarea, conservarea, protejarea şi menţinerea stilului arhitectonic al Bisericii Sf Nicolae – Schitul Mironești, județul Giurgiu ca premisă a dezvoltării turismului cultural și religios, factor care stimulează dezvoltarea economică a regiunii Sud Muntenia și păstrarea culturii tradiţionale româneşti, respectând principiile dezvoltării durabile şi protecţiei mediului. 
 
