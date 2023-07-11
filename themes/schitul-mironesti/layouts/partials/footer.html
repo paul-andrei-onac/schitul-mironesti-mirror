@@ -4,23 +4,26 @@
       <div class="col-lg-8 mx-auto">
         {{ with .Site.Params.footer.info }}
         <p class="footer-european">{{ .heading | safeHTML }}</p>
-        {{ end }}
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        {{ with .Site.Params.footer.info }}
-        <p class="footer-info">{{ .text }}</p>
+        <p class="footer-european--small">{{ .text }}</p>
         {{ end }}
       </div>
     </div>
   </div>
   <img class="img-fluid" src="/footer/footer-image.png" alt="shape">
   <div class="container">
-    <div class="footer-links">
-      {{ range .Site.Params.footer.links }}
-      <a href="{{ .url }}" target="_blank">{{ .title }}</a> <span>|</span>
-      {{ end }}
+    <div class="row">
+      <div class="col-12">
+        <p class="footer-info mt-3">“Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă invităm să vizitaţi 
+          <a href="www.fonduri-ue.ro" target="_blank">"www.fonduri-ue.ro"</a> și <a href="www.mfe.gov.ro" target="_blank">"www.mfe.gov.ro"</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer-links">
+        {{ range .Site.Params.footer.links }}
+        <a href="{{ .url }}" target="_blank">{{ .title }}</a> <span>|</span>
+        {{ end }}
+      </div>
     </div>
   </div>
 

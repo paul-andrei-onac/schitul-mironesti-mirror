@@ -4,39 +4,16 @@
   background-color: $white;
   padding: 1rem 0;
 
-  &--project {
-    background-color: $white;
-    padding: 1rem 0 0;
-  }
-
-  .footer-european-top {
-    text-align: center;
-    color: $primary;
-    font-size: 1.375rem;
-
-    a {
-      color: $primary;
-      font-weight: bold;
-
-      &:hover {
-        color: $secondary;
-      }
-    }
-  }
-
   .footer-european {
     text-align: center;
     color: $primary;
     font-size: 1.5rem;
-  }
 
-  hr {
-    border-color: $primary;
-    border-width: 2px;
-    opacity: 1;
-
-    &:last-child {
-      margin-bottom: 0;
+    &--small {
+      text-align: center;
+      font-size: $h6-font-size;
+      font-weight: $font-weight-bold;
+      color: $primary;
     }
   }
 
@@ -44,11 +21,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-    font-size: 1.5rem;
+    gap: 0.5rem;
+    font-size: $h6-font-size;
     color: $primary;
-    font-weight: bold;
 
     @include media-breakpoint-down(md) {
       gap: 1rem;
@@ -62,6 +37,7 @@
   
     a {
       color: $primary;
+      text-decoration: none;
 
       &:hover {
         color: $secondary;
@@ -71,6 +47,14 @@
 
   .footer-info {
     text-align: center;
-    color: $primary;
+
+    a {
+      color: $primary;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
   }
 }
