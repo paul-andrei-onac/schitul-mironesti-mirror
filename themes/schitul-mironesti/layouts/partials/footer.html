@@ -4,6 +4,12 @@
       <div class="col-lg-8 mx-auto">
         {{ with .Site.Params.footer.info }}
         <p class="footer-european">{{ .heading | safeHTML }}</p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {{ with .Site.Params.footer.info }}
         <p class="footer-european--small">{{ .text }}</p>
         {{ end }}
       </div>
