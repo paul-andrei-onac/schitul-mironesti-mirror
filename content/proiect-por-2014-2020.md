@@ -20,9 +20,6 @@ sitemap:
 page:
   title: "Proiect <span>SMIS</span> 126844"
 
-footerTitle: "Pentru informații detaliate despre celelalte programe cofinanțate de Uniunea Europeană, vă invităm să vizitați"
-footerLink: "https://www.fonduri-ue.ro"
-
 ---
 
 **Numele proiectului: "CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE"**
@@ -31,7 +28,11 @@ Contract de finanțare nr. 4274 / 23.05.2019, cod SMIS 126844
 
 Denumirea beneficiarului: **Schitul Mironești**
 
-Proiect finantat prin PROGRAMUL OPERAȚIONAL REGIONAL 2014-2020, Prioritatea de investiții 5.1 – Îmbunătăţirea mediului urban si conservarea, protectia si valorificare durabila a patrimoniului cultural, Prioritatea de Investiții 5.1. - Conservarea, protejarea, promovarea si dezvoltarea patrimoniului natural si cultural.
+Proiect finantat prin PROGRAMUL OPERAȚIONAL REGIONAL 2014-2020
+
+Axa prioritară 5 "Îmbunătăţirea mediului urban şi conservarea, protecţia şi valorificarea durabilă a patrimoniului cultural"
+
+Prioritatea de investiții 5.1. "Conservarea, protejarea, promovarea şi dezvoltarea patrimoniului natural şi cultural".
 
 - Autoritatea de Management: **Ministerul Dezvoltării Regionale și Administrației Publice**
 - Organism Intermediar: **Agenția pentru Dezvoltare Regională Sud Muntenia**
@@ -41,8 +42,19 @@ Proiect finantat prin PROGRAMUL OPERAȚIONAL REGIONAL 2014-2020, Prioritatea de 
 - Locul de implementare al proiectului este: **Comuna Goștinari, Str. Principală, Nr. 58 , Jud. Giurgiu.**
 - Valoarea totală a proiectului: **20.660.734,96 lei**
 - Contribuția Uniunii Europene: **17.090.824,37 lei**
+- Contribuția națională: **3.569.910,59 lei**
 
-Schitul Mironești, în calitate de beneficiar, implementează proiectul denumit "CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE", Cod SMIS 126844, ca urmare a încheierii contractului de finanțare nr. 4274/23.05.2019 cu Autoritatea de Management Ministerul Dezvoltării Regionale și Administrației Publice prin Organism intermediar Agenția pentru Dezvoltare Regională SUD MUNTENIA. Proiectul este finanțat prin Programul Operațional Regional 2014-2020 Axa prioritară 5 "Îmbunătăţirea mediului urban și conservarea, protecția și valorificarea durabilă a patrimoniului cultural", Prioritatea de investiții 5.1. "Conservarea, protejarea, promovarea și dezvoltarea patrimoniului natural și cultural".
+Schitul Mironești, în calitate de beneficiar, implementează proiectul denumit “CONSOLIDARE, RESTAURARE BISERICA “SF. NICOLAE”, MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ – LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE”, Cod SMIS 126844, ca urmare a încheierii contractului de finanțare nr. 4274/23.05.2019 cu Autoritatea de Management Ministerul Dezvoltării Regionale și Administrației Publice prin Organism intermediar Agenția pentru Dezvoltare Regională SUD MUNTENIA.
+
+**Proiectul tehnic pentru Schitul Mironești cuprinde următoarele tipuri de lucrări:**
+
+- **BISERICA SF. NICOLAE** - lucrări de consolidare, restaurare, conservare, refacere finisaje și instalații; refacere învelitoare și sistem preluare ape pluviale; refacere tâmplării; refacere trotuar de gardă; realizare iluminat arhitectural;
+- **TURN CLOPOTNIȚĂ:** propunere turn clopotniță pe latura de sud pentru facilitarea unui nou acces în sit și amplasare clopot;
+- **PANGAR și LUMÂNĂRAR:** propunere corpuri noi de mici dimensiuni, din zidărie de beton și cărămidă;
+- **CORP ANEXĂ:** propunere construcție nouă pentru adăpostirea grupurilor sanitare și cameră tehnică;
+- **FOIȘOR:** construcție din lemn pentru expunerea unui număr limitat de vestigii istorice locale;
+- **ÎMPREJMUIRE:** propunere împrejmuire perimetrală din zidărie, plasă bordurată și elemente vegetale, cu punct de acces auto;
+- **AMENAJARE EXTERIOARĂ:** propunere care va consta în amenajarea circuitului interior cu alei pietonale, vegetații acoperitoare de sol, plantare arbuști, arbori și sistem minimal de irigare.
 
 **Obiectivele proiectului:**
 
@@ -72,6 +84,4 @@ Data de începere a proiectului este 14 ianuarie 2016 , iar data finalizării pr
 
 Valoarea totală a proiectului este 20.660.734,96 lei, din care 20.106.852.20 lei reprezintă suma nerambursabilă. Valoarea eligibilă nerambursabilă din FEDR este de 17.090.824,37 lei și 3.016.027,83 lei este valoarea eligibila nerambursabilă din Bugetul de Stat.
 
-Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă
-
-invităm să vizitaţi [www.fonduri-ue.ro](http://www.fonduri-ue.ro/), precum si site-ul web al Programul Operațional Regional 2014-2020, [www.inforegio.ro](http://www.inforegio.ro/) și pagina de facebook a programului [facebook.com/inforegio.ro](http://facebook.com/inforegio.ro).
+Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă invităm să vizitaţi [www.fonduri-ue.ro](http://www.fonduri-ue.ro/), precum si site-ul web al Programul Operațional Regional 2014-2020, [www.inforegio.ro](http://www.inforegio.ro/) și pagina de facebook a programului [facebook.com/inforegio.ro](http://facebook.com/inforegio.ro).
