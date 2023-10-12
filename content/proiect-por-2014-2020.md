@@ -34,7 +34,7 @@ Axa prioritară 5 "Îmbunătăţirea mediului urban şi conservarea, protecţia 
 
 Prioritatea de investiții 5.1. "Conservarea, protejarea, promovarea şi dezvoltarea patrimoniului natural şi cultural".
 
-- Autoritatea de Management: **MINISTERUL DEZVOLTĂRII, LUCRĂRILOR PUBLICE ȘI ADMINISTRAȚIEI**
+- Autoritatea de Management: **MINISTERUL INVESTITIILOR SI PROIECTELOR EUROPENE**
 - Organism Intermediar: **Agenția pentru Dezvoltare Regională Sud Muntenia**
 - Perioada de implementare a proiectului: **91 luni**
 - Data de începere a proiectului: **14.01.2016**
@@ -44,7 +44,7 @@ Prioritatea de investiții 5.1. "Conservarea, protejarea, promovarea şi dezvolt
 - Contribuția Uniunii Europene: **17.090.824,37 lei**
 - Contribuția națională: **3.569.910,59 lei**
 
-Schitul Mironești, în calitate de beneficiar, implementează proiectul denumit “CONSOLIDARE, RESTAURARE BISERICA “SF. NICOLAE”, MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ – LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE”, Cod SMIS 126844, ca urmare a încheierii contractului de finanțare nr. 4274/23.05.2019 cu Autoritatea de Management MINISTERUL DEZVOLTĂRII, LUCRĂRILOR PUBLICE ȘI ADMINISTRAȚIEI prin Organism intermediar Agenția pentru Dezvoltare Regională SUD MUNTENIA.
+Schitul Mironești, în calitate de beneficiar, implementează proiectul denumit “CONSOLIDARE, RESTAURARE BISERICA “SF. NICOLAE”, MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ – LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE”, Cod SMIS 126844, ca urmare a încheierii contractului de finanțare nr. 4274/23.05.2019 cu Autoritatea de Management MINISTERUL INVESTITIILOR SI PROIECTELOR EUROPENE prin Organism intermediar Agenția pentru Dezvoltare Regională SUD MUNTENIA.
 
 **Proiectul tehnic pentru Schitul Mironești cuprinde următoarele tipuri de lucrări:**
 
