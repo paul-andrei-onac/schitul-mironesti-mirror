@@ -11,58 +11,7 @@ sitemap:
   changefreq: weekly
   filename: sitemap.xml
   priority: 1
-
-#----------------------------------------------------/
-# Gallery
-#----------------------------------------------------/
-gallery: 
-  gal:
-    items:
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/gallery-1.jpg"
-        image2x: "/gallery/gallery-1@2x.jpg"
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/gallery-2.jpg"
-        image2x: "/gallery/gallery-2@2x.jpg"
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/gallery-3.jpg"
-        image2x: "/gallery/gallery-3@2x.jpg"
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/gallery-4.jpg"
-        image2x: "/gallery/gallery-4@2x.jpg"
-
-
-  execution:
-    items:
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/executie/executie-1.jpg"
-        image2x: "/gallery/executie/executie-1@2x.jpg"
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/executie/executie-2.jpg"
-        image2x: "/gallery/executie/executie-2@2x.jpg"
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/executie/executie-3.jpg"
-        image2x: "/gallery/executie/executie-3@2x.jpg"
-
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/gallery/executie/executie-4.jpg"
-        image2x: "/gallery/executie/executie-4@2x.jpg"
-
-    
-
+  
 ---
+
+{{< gallery >}}

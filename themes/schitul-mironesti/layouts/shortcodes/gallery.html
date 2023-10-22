@@ -1,0 +1,28 @@
+{{ with .Site.Data.gallery }}
+<div class="c-nav-tabs">
+  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+    {{ range $index, $item := .items }}
+      <li class="nav-item" role="presentation">
+        <button class="nav-link {{ if eq $index 0 }} active {{ end }}" id="{{ anchorize $item.title }}-tab-{{ $index }}" data-bs-toggle="pill" data-bs-target="#{{ anchorize $item.title }}-content-{{ $index }}"
+          type="button" role="tab" aria-controls="{{ anchorize $item.title }}-content-{{ $index }}" aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}">{{ .title }}</button>
+      </li>
+    {{ end }}
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    {{ range $index, $item := .items }}
+      <div class="tab-pane fade {{ if eq $index 0 }} active show {{ end }}" id="{{ anchorize $item.title }}-content-{{ $index }}" role="tabpanel" aria-labelledby="{{ anchorize $item.title }}-tab-{{ $index }}"
+        tabindex="0">
+        <div class="gallery-wrapper style2">
+          {{ range $contentIndex, $content := $item.content }}
+            <a data-fancybox="gallery" data-src="{{ $content.image2x }}"
+              data-srcset="{{ $content.image2x }}, {{ $content.image }}" href="javascript:void(0)">
+              <img class="img-fluid rounded" src="{{ $content.image }}"
+                srcset="{{ $content.image }} 1x, {{ $content.image2x }} 2x" alt="{{ $content.title | markdownify }}">
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
