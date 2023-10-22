@@ -1,23 +1,16 @@
 ---
-title: "Galerie | Schitul Mironești"
-keywords: ["Schitul Mironesti"]
-date: 2023-01-22T14:41:11+02:00
+title: "Gale<span>rie</span>"
+date: 2023-01-22
 draft: false
-type: page
-layout: gallery
+keywords: ["Schitul Mironesti"]
+type: "page"
+layout: "gallery"
 sitemap_exclude: false
 
 sitemap:
   changefreq: weekly
   filename: sitemap.xml
   priority: 1
-
-
-#----------------------------------------------------/
-# Page
-#----------------------------------------------------/
-page:
-  title: "Gale<span>rie</span>"
 
 #----------------------------------------------------/
 # Gallery

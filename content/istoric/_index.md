@@ -1,10 +1,10 @@
 ---
-title: "Istoric | Schitul Mironești"
-keywords: ["Schitul Mironesti"]
+title: "Isto<span>ric</span>"
 date: 2023-01-25T22:53:20+02:00
 draft: false
-type: page
-layout: istoric
+keywords: ["Schitul Mironesti"]
+type: "page"
+layout: "istoric"
 sitemap_exclude: false
 
 sitemap:
@@ -12,14 +12,10 @@ sitemap:
   filename: sitemap.xml
   priority: 1
 
-
 #----------------------------------------------------/
 # Page
 #----------------------------------------------------/
 page:
-  title: "Isto<span>ric</span>"
-  description: ""
-
   image:
     items:
       

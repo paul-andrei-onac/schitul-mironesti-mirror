@@ -1,22 +1,16 @@
 ---
 title: "Schitul Mironești"
-date: 2022-12-05T15:34:49+02:00
-keywords: ["Schitul Mironesti"]
+date: 2022-12-05
 draft: false
-type: other
-layout:
+keywords: ["Schitul Mironesti"]
+type: "other"
 sitemap_exclude: false
 
 sitemap:
   changefreq: weekly
   filename: sitemap.xml
   priority: 1
-
-#----------------------------------------------------/
-# Head
-#----------------------------------------------------/
   
-
 #----------------------------------------------------/
 # Page
 #----------------------------------------------------/
