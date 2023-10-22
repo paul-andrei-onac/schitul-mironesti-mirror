@@ -10,7 +10,7 @@
     "watch": "hugo && hugo server --watch",
     "prod": "hugo --minify"
   },
-  "author": "",
+  "author": "Paul Andrei Onac",
   "license": "ISC",
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
