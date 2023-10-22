@@ -1,0 +1,30 @@
+# Main Menu
+[[main]]
+name = "Acasă"
+url = "/"
+weight = 10
+
+[[main]]
+name = "Istoric"
+url = "/istoric/"
+weight = 20
+
+[[main]]
+name = "Proiect SMIS 126844"
+url = "/proiect-smis-126844/"
+weight = 30
+
+[[main]]
+name = "Digitalizare 3D"
+url = "/digitalizare-3d/"
+weight = 40
+
+[[main]]
+name = "Galerie"
+url = "/galerie/"
+weight = 50
+
+[[main]]
+name = "Contact"
+url = "/contact/"
+weight = 60

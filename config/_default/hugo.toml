@@ -1,0 +1,36 @@
+baseURL = "https://schitul-mironesti.ro"
+# theme
+theme = "schitul-mironesti"
+
+# website title
+title = "Schitul Mironești"
+
+# website copyright
+copyright = ""
+
+# determines default content language ["en", "zh-cn", "fr", "pl", ...]
+defaultcontentlanguage = "ro"
+
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "ro"
+
+# language name ["English", "简体中文", "Français", "Polski", ...]
+LanguageName = "Română"
+
+# all languages are generated in folders
+defaultContentLanguageInSubdir = false
+
+# whether to use robots.txt
+enableRobotsTXT = true
+
+# whether to show the framework used in header
+disableHugoGeneratorInject = false
+
+# whether to use emoji code
+enableEmoji = true
+
+# whether to use shortcodes inside other shortcodes
+enableInlineShortcodes = true
+
+# wather to use taxonomies or not
+disableKinds = ["taxonomy", "term"]

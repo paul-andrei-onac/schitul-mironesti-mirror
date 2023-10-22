@@ -1,0 +1,32 @@
+author = "Schitul Mironești"
+description = "Biserica Sf. Ierarh Nicolae din Mironești, se află la sud de râul Argeș, în apropierea Mânăstirii Comana."
+keywords = ["Schitul Mironesti"]
+favicon = "favicon/favicon.ico"
+googleMapsLink = ""
+googleTagManager = "GTM-59DKPVM"
+robotsActive = "index, follow"
+googleBotActive = "index,follow,snippet,archive"
+BotsInactive = "noindex, nofollow"
+themeColorLight = "#000"
+themeColorDark = "#fff"
+
+[footer]
+[footer.info]
+heading = "Investim în viitorul tău! <br>Proiect cofinanțat din Fondul European de Dezvoltare Regională prin Programul Operațional Regional 2014-2020"
+text = "Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României"
+
+[[footer.links]]
+title = "www.inforegio.ro"
+url = "https://www.inforegio.ro"
+
+[[footer.links]]
+title = "facebook.com/inforegio.ro"
+url = "https://facebook.com/inforegio.ro"
+
+[footer.contactInfo]
+address = "Strada Principală, Mironeşti"
+city = "Giurgiu"
+phone = ""
+fax = ""
+person = ""
+copyright = "2023 Schitul Mironești"
