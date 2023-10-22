@@ -4,11 +4,12 @@
       <div class="col-12">
         <div class="header-grid mb-2">
           {{ with .Site.Data.logos }}
-          {{ range $index, $items := .items }}
-            <a href="{{ .url }}" target="_blank">
-              <img class="img-fluid" src="{{ .img }}" alt="{{ .Title }}">
-            </a>
-          {{ end }}
+            {{ range $index, $items := .items }}
+              <a href="{{ .url }}" target="_blank">
+                {{ partial "sr-only" . }}
+                <img class="img-fluid" src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}">
+              </a>
+            {{ end }}
           {{ end }}
         </div>
       </div>
@@ -16,16 +17,15 @@
   </div>
   <nav class="navbar navbar-expand-md bg-white">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           {{ $current := . }}
-          {{ range .Site.Menus.main.ByWeight }}
+          {{ range site.Menus.main.ByWeight }}
             <li class="nav-item">
-              <a class="nav-link {{ if eq $current.RelPermalink .URL }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+              <a class="nav-link {{ if eq $current.RelPermalink .URL }} active {{ end }}" href="{{ .URL }}" title="{{ .Name }}" role="button" tabindex="0">{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>
