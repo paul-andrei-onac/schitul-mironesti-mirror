@@ -14,7 +14,7 @@
   <meta name="keywords" content='{{ if .Params.keywords }}{{ delimit (uniq $keywords) ", " }}{{ else if .Site.Params.keywords }}{{ delimit (uniq $keywords) ", " }}{{ end }}'>
   
   <meta name="dc.relation" content='{{ .Site.BaseURL }}'>
-  {{ partial "head/open-graph" . }}
+  {{ partial "microformats/opengraph" . }}
   
   {{ if and (not .Site.IsServer) hugo.IsProduction }}
     <meta name="robots" content='{{ .Site.Params.robotsActive }}'>
@@ -33,6 +33,8 @@
   {{ $style := resources.Get "sass/main.scss" | toCSS (dict "targetPath" "main.css" "enableSourceMap" true) | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css">
   {{ end }}
+
+  {{ partial "microformats/schema" . }}
 
   {{ partial "google-tag-manager/gtm-head" . }}
 </head>

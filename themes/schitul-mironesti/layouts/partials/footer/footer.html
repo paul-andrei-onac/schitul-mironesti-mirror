@@ -36,12 +36,4 @@
       </div>
     </div>
   </div>
-
-  {{ if and (not .Site.IsServer) hugo.IsProduction }}
-  {{ $script := resources.Get "js/index.js" | js.Build "main.js" | fingerprint | minify }}
-  <script type="text/javascript" src="{{ $script.RelPermalink }}" async></script>
-  {{ else }}
-  {{ $script := resources.Get "js/index.js" | js.Build "main.js" | fingerprint }}
-  <script type="text/javascript" src="{{ $script.RelPermalink }}" async></script>
-  {{ end }}
 </footer>
