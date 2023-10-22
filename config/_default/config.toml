@@ -34,3 +34,9 @@ enableInlineShortcodes = true
 
 # wather to use taxonomies or not
 disableKinds = ["taxonomy", "term"]
+
+# Author config
+[author]
+name = "Paul Andrei Onac"
+email = "onac.paul.andrei@gmail.com"
+link = "mailto:onac.paul.andrei@gmail.com"
