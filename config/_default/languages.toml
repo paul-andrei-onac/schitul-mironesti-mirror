@@ -1,0 +1,6 @@
+# Multilingual
+[ro]
+weight = 10
+languageCode = "ro"
+languageName = "Română"
+languageDirection = "ltr"
