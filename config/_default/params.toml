@@ -2,6 +2,7 @@ description = "Biserica Sf. Ierarh Nicolae din Mironești, se află la sud de r�
 keywords = ["Schitul Mironesti"]
 favicon = "favicon/favicon.ico"
 googleTagManager = "GTM-59DKPVM"
+opengraph = "/og-image/schitul-mironesti.jpg"
 
 [verification]
 google = "v8N6hHNhgFDp62DupEAhSFrTifD3v0MTK4D7iIJtW7k"
