@@ -1,0 +1,17 @@
+[hugoVersion]
+extended = true
+min = "0.111.3"
+max = ""
+
+[[mounts]]
+source = "assets"
+target = "assets"
+[[mounts]]
+source = "static"
+target = "static"
+[[mounts]]
+source = "node_modules/bootstrap/scss"
+target = "assets/sass/vendors/bootstrap"
+[[mounts]]
+source = "node_modules/bootstrap/dist/js"
+target = "assets/js/vendors/bootstrap"
