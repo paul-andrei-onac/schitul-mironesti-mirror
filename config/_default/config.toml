@@ -6,7 +6,7 @@ theme = "schitul-mironesti"
 title = "Schitul Mironești"
 
 # website copyright
-copyright = ""
+copyright = "© 2023 Schitul Mironești"
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultcontentlanguage = "ro"

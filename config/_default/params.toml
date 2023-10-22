@@ -22,6 +22,7 @@ url = "https://facebook.com/inforegio.ro"
 [footer.contactInfo]
 address = "Strada Principală, Mironeşti"
 city = "Giurgiu"
+postalCode = "087106"
 phone = ""
 fax = ""
 person = ""

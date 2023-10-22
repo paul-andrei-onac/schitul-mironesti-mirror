@@ -1,18 +1,19 @@
 {{ if and (not .Site.IsServer) hugo.IsProduction }}
-{{ safeHTML "<script type=\"application/ld+json\">" }}
+<script type="application/ld+json">
   {
     "@context": "https://schema.org/",
     "@type": "Church",
-    "name": "{{ .Title }}",
-    "url": "{{ .Site.BaseURL }}",
-    "description": "{{ .Site.Params.Description }}",
-    "image": "{{ .Site.Data.og_image.image }}",
+    "name": "{{ site.Title }}",
+    "@id": {{ site.BaseURL | safeURL }},
+    "url": {{ site.BaseURL | safeURL }},
+    "description": "{{ site.Params.Description }}",
+    "image": {{ .Site.Data.og_image.image }},
     "telephone": "{{ .Site.Params.footer.contactInfo.phone }}",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "{{ .Site.Params.footer.contactInfo.address }}",
       "addressLocality": "{{ .Site.Params.footer.contactInfo.city }}",
-      "postalCode": "",
+      "postalCode": "{{ .Site.Params.footer.contactInfo.postalCode }}",
       "addressCountry": "{{ .Site.Language | upper }}"
     },
     "openingHoursSpecification": {
@@ -30,5 +31,81 @@
       "closes": "23:59"
     } 
   }
-{{ safeHTML "</script>" }}
+</script>
+
+<!--Global Schema-->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": {{ site.BaseURL | safeURL }},
+    "url": {{ site.BaseURL | safeURL }},
+    "name": "{{ site.Title }}",
+    "description": "{{ site.Params.description }}",
+    "inLanguage": "{{ site.LanguageCode }}",
+    "thumbnailUrl": {{ site.Params.logo | replaceRE "^static/" "" | absURL | safeURL }},
+    "license": "{{ site.Copyright }}"
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": {{ .Site.BaseURL | safeURL }},
+    "name": "{{ .Site.Title }}",
+    "description": "{{ .Site.Params.description }}",
+    "url": {{ .Site.BaseURL | safeURL }},
+    "logo": {{ .Site.Params.sigla | replaceRE "^static/" "" | absURL | safeURL }},
+    "address":
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ .Site.Params.footer.contactInfo.city }}",
+        "streetAddress": "{{ .Site.Params.footer.contactInfo.street }}",
+        "postalCode": "{{ .Site.Params.footer.contactInfo.postalCode }}",
+        "addressCountry": "{{ .Site.Language | upper }}",
+        "addressRegion": "{{ .Site.Params.addressRegion }}"
+      },
+    "sameAs": [
+      {{ range $index, $item := .Site.Params.social.main }}{{ if $index }}, {{ end }}"{{ .url | absURL }}"{{ end }}
+    ]
+  }
+</script>
+
+<!--About Page-->
+{{ if or .IsHome (eq .Layout "istoric") }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "{{- with .Site.GetPage "istoric" -}} {{- .Title | plainify -}} {{- end -}}",
+    "description": "{{- with .Site.GetPage "istoric" -}} {{- .Page.Params.description -}} {{- end -}}",
+    "url": {{ .Permalink | safeURL }},
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified": "{{ now.Format "2006-01-02" }}",
+    "about": {
+      "@type": "Organization",
+      "name": "{{ site.Title }}",
+      "description": "{{ site.Params.description }}",
+      "url": {{ site.BaseURL | safeURL }},
+      "logo": {{ site.Params.logo | replaceRE "^static/" "" | absURL | safeURL }}
+    }
+  }
+</script>
+{{ end }}
+
+<!--Contact-->
+{{ if or .IsHome (eq .Layout "contact") }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "{{- with .Site.GetPage "contact" -}} {{- .Title | plainify -}} {{- end -}}",
+    "description": "{{- with .Site.GetPage "contact" -}} {{- .Page.Params.description -}} {{- end -}}",
+    "url": {{ with .Site.GetPage "contact" -}} {{- .Permalink -}} {{- end -}},
+    "datePublished": "{{ .Date.Format "2006-01-02" }}",
+    "dateModified": "{{ now.Format "2006-01-02" }}"
+  }
+</script>
+{{ end }}
 {{ end }}
