@@ -28,6 +28,7 @@
   {{ partial "head/favicon" . }}
   {{ partial "microformats/link" . }}
   {{ partial "microformats/opengraph" . }}
+  {{ template "_internal/twitter_cards.html" . }}
 
   {{ if and (not .Site.IsServer) hugo.IsProduction }}
     {{ $style := resources.Get "sass/main.scss" | toCSS (dict "targetPath" "main.css" "enableSourceMap" true) | fingerprint | minify }}
