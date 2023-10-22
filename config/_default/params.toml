@@ -1,10 +1,7 @@
-author = "Schitul Mironești"
 description = "Biserica Sf. Ierarh Nicolae din Mironești, se află la sud de râul Argeș, în apropierea Mânăstirii Comana."
 keywords = ["Schitul Mironesti"]
 favicon = "favicon/favicon.ico"
 googleTagManager = "GTM-59DKPVM"
-themeColorLight = "#000000"
-themeColorDark = "#ffffff"
 
 [verification]
 google = "v8N6hHNhgFDp62DupEAhSFrTifD3v0MTK4D7iIJtW7k"
