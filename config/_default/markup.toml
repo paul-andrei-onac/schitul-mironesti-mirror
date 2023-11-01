@@ -1,3 +1,6 @@
+[goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
 [goldmark]
 [goldmark.renderer]
 unsafe = true
