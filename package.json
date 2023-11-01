@@ -6,11 +6,11 @@
   "scripts": {
     "clean": "rm -rf public",
     "build": "hugo",
-    "dev": "hugo server --watch --disableFastRender",
-    "watch": "hugo && hugo server --watch",
+    "dev": "hugo && hugo server --watch --disableFastRender",
+    "watch": "hugo server --watch --disableFastRender",
     "prod": "hugo --minify"
   },
-  "author": "Paul Andrei Onac",
+  "author": "Paul-Andrei Onac",
   "license": "ISC",
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
