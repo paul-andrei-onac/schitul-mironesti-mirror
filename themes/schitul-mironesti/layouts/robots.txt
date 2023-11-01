@@ -6,6 +6,9 @@ Allow: */gif/*
 Allow: */js/*
 Allow: */css/*
 
+Disallow: /tags/
+Disallow: /categories/
+
 {{ range .Pages -}}
 Allow: {{ .RelPermalink }}
 {{ end }}
