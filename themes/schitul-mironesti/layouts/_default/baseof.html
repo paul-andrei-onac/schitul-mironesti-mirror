@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if lte 8]><html class="pre-ie9" lang="{{ $.Site.Language }}"><![endif]-->
-<!--[if gte IE 9]><!--><html class="no-js" lang="{{ $.Site.Language }}"><!--<![endif]-->
+<!--[if lte 8]><html class="pre-ie9" lang="{{ .Site.LanguageCode }}"><![endif]-->
+<!--[if gte IE 9]><!--><html class="no-js" lang="{{ .Site.LanguageCode }}" dir="{{ .Site.Language.LanguageDirection }}"><!--<![endif]-->
 {{ partial "head/head" . }}
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
