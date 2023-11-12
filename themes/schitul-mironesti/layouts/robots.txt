@@ -1,5 +1,6 @@
 User-agent: *
 
+Allow: /
 Allow: */png/*
 Allow: */jpg/*
 Allow: */gif/*
@@ -9,10 +10,6 @@ Allow: */webp/*
 
 Disallow: /tags/
 Disallow: /categories/
-
-{{ range .Pages -}}
-Allow: {{ .RelPermalink }}
-{{ end }}
 
 Host: {{ .Permalink }}
 Sitemap: {{ "/sitemap.xml" | absLangURL }}
