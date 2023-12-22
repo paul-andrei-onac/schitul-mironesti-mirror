@@ -14,12 +14,10 @@
 
     .navbar-nav {
       margin: auto;
-      gap: 2rem;
     
       li {
         color: $primary;
         font-size: 1.5rem;
-        list-style: disc;
 
         &:first-child {
           list-style: none;
@@ -59,8 +57,6 @@
   .header-area {
     .navbar {
       .navbar-nav {
-        gap: 1rem;
-
         li {
           font-size: 1.3rem;
         }
@@ -90,8 +86,6 @@
   .header-area {
     .navbar {
       .navbar-nav {
-        gap: unset;
-        
         li {
           list-style: none;
         }
