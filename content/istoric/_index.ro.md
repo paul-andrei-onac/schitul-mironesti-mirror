@@ -33,7 +33,7 @@ page:
 
 **Satul Mironeşti**, după vechea sa denumire „Coiani" (Coeni), a făcut parte din domeniul (moşia Coaini) a uneia dintre ramurile familiei boierilor Craioveşti. O primă biserică a fost ridicată în cadrul Moșiei de la Coiani, de marele ban Neagoe şi de soţia acestuia Anca din Coiani, înaintea anului 1563. Mai târziu, în perioada anului 1668, când şi-au avut aici reşedinţa Ilinca ( fiica cea mică a domnitorului Radu Şerban) şi soţul ei, postelnicul Constantin Cantacuzino, s-a renunţat la vechea construcţie a bisericii, fiind construită una nouă, ctitori fiind Ilinca şi fiii săi.
 
-Conform textului pisaniei plasate deasupra portalului vestic, actuala biserică a fost ctitorită de Ilinca, soţia postelnicului Constantin Cantacuzino şi fiii acesteia, marele stolnic Constantin Cantacuzino, marele spătar Mihail Cantacuzino, aga Matei şi cămăraşul Iordache ( Constantin Vel Stolnic și Mihai Vel Spătar -- e la voi pe site).
+Conform textului pisaniei plasate deasupra portalului vestic, actuala biserică a fost ctitorită de Ilinca, soţia postelnicului Constantin Cantacuzino şi fiii acesteia, marele stolnic Constantin Cantacuzino, marele spătar Mihail Cantacuzino, aga Matei şi cămăraşul Iordache (Constantin Vel Stolnic și Mihai Vel Spătar).
 
 În secolul al XIX-lea, după adoptarea Regulamentului organic, Moşia Coiani şi locuitorii ei au ajuns în administrarea satului. O parte a domeniului era dat în arendă mănăstirii Văcăreşti. Spre sfârşitul aceluiaşi secol, o parte a fostei moşii a Craioveştilor şi, ulterior, a Cantacuzinilor a fost vândută „de veci" locuitorilor.
 
