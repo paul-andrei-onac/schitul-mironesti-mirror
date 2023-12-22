@@ -1,0 +1,167 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+display_url: http://localhost:1313
+site_url: http://localhost:1313/
+logo_url: /media/logo.svg
+media_folder: /assets/uploads # required even if using Cloudinary
+public_folder: /assets/uploads
+publish_mode: editorial_workflow # not working yet
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: CLD_CLOUD_NAME
+#     api_key: CLD_API_KEY
+
+i18n:
+  structure: multiple_files
+  locales: [en, ro]
+  default_locale: en
+
+aliases:
+  - &TITLE { name: title, label: Title, widget: string}
+  - &DESCRIPTION { name: description, label: Description, widget: text, required: false }
+  - &BODY { name: body, label: Body, widget: markdown, required: false }
+  - &IMAGE { name: image, label: Image, widget: image, required: false, i18n: true }
+  - &VISIBLE_IN_CMS { name: visibleInCMS, widget: hidden, default: true }
+
+collections:
+  - name: blog
+    label: Blog
+    label_singular: post
+    folder: content/blog
+    preview_path: blog/{{slug}}
+    create: true
+    filter: {field: visibleInCMS, value: true}
+    editor:
+      preview: false
+    fields: [
+      *TITLE,
+      *DESCRIPTION,
+      *IMAGE,
+      *BODY,
+      *VISIBLE_IN_CMS,
+    ]
+
+  - name: pages
+    label: Pages
+    format: yaml-frontmatter
+    editor:
+      preview: false
+    files: [
+      {label: Home, name: home, file: content/_index.md, fields: [
+        *TITLE,
+        *DESCRIPTION,
+        *IMAGE,
+        *BODY,
+      ]},
+      {label: Blog list, name: blog-list, file: content/blog/_index.md, preview_path: blog, fields: [
+        *TITLE,
+        *DESCRIPTION,
+      ]},
+
+      {label: Posts list, name: posts-list, file: content/posts/_index.md, preview_path: posts, fields: [
+        *TITLE,
+        *DESCRIPTION,
+      ]},
+    ]
+
+
+
+  - name: 'posts' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Posts' # Used in the UI
+    label_singular: 'Post' # Used in the UI, ie: "New Post"
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines that are specific to a collection.
+    folder: 'content/posts'
+    preview_path: 'posts/{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
+    create: true # Allow users to create new documents in this collection
+    i18n: true
+  
+    view_filters:
+      - label: Posts With Index
+        field: title
+        pattern: 'This is post #'
+      - label: Posts Without Index
+        field: title
+        pattern: front matter post
+      - label: Drafts
+        field: draft
+        pattern: true
+      - label: "Andrei's and Teodora's Posts"
+        field: author
+        pattern: 'Andrei|Teodora'
+
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
+    fields: # The fields each document in this collection have
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1', i18n: true }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          i18n: duplicate
+        }
+      - {
+          label: 'Modified Date',
+          name: 'lastmod',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          i18n: duplicate
+        }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, i18n: true }
+      - { label: 'Author', name: 'author', widget: 'string', tagname: 'h2', required: false, i18n: true }
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
+        i18n: true
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        label_singular: Nu stiu ce face
+        default: ["posts"]
+        required: false
+        i18n: true
+        # frontmatter_delimiter: ["(", ")"] # nu merge
+        # pattern: ['.{20,}', "Must have at least 20 characters"] # nu merge
+      
+      - { label: "Layout", name: "layout", widget: "hidden", default: "posts" }
+      - { label: "Page URL", name: "slug", widget: "string", required: false, i18n: duplicate }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.', required: false, i18n: true }
+
+  - name: data
+    label: Data
+    label_singular: 'Data'
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines that are specific to a collection.
+    folder: data/testimonials
+    create: true
+    slug: "items"
+    summary: 'Testimonals'
+    format: yaml
+    i18n:
+      structure: single_file
+    fields:
+      - label: "Testimonials"
+        name: "testimonials"
+        collapsed: false
+        i18n: true
+        widget: "list"
+        fields:
+          - { label: Quote, name: quote, widget: string, default: "Everything is awesome!" }
+          - { label: Author, name: author, widget: string } 
