@@ -1,10 +1,10 @@
 ---
-title: "Digitalizare <span>3D</span>"
+title: "Digitizare <span>3D</span>"
 date: 2023-01-25
 draft: false
 keywords: ["Schitul Mironesti"]
 type: "page"
-layout: "digitalizare"
+layout: "digitizare"
 sitemap_exclude: false
 
 sitemap:

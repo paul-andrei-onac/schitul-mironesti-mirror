@@ -33,13 +33,13 @@ identifier  = ""
 weight      = 30
 
 [[main]]
-name        = "Digitalizare 3D"
+name        = "Digitizare 3D"
 url         = ""
 pre         = ""
 post        = ""
-title       = "Digitalizare 3D"
+title       = "Digitizare 3D"
 parent      = ""
-pageRef     = "/digitalizare-3d"
+pageRef     = "/digitizare-3d"
 identifier  = ""
 weight      = 40
 
