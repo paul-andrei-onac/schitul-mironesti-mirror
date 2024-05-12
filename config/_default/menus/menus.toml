@@ -34,7 +34,7 @@ weight      = 30
 
 [[main]]
 name        = "Digitizare 3D"
-url         = "https://arenacad.websharecloud.com/?v=pv&t=p:default,c:panoramaview,h:f,m:t,pr:f&pv=pv1&pv1=vt:p,u:8fc8c293-97b4-46dd-ad28-79a227692c32,cf:65.00,dh:f,st:f,p:6.16764,t:0.55226&p=p:digitizare-gostinari-schitul-mironesti,share:5ef2a8f7-cfa9-4257-afc6-798a1b5695e9"
+url         = ""
 pre         = ""
 post        = ""
 title       = "Digitizare 3D"

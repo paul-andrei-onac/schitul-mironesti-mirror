@@ -1,0 +1,59 @@
+.c-digitizare {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  .c-digitalizare-body {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+
+    @include media-breakpoint-down(md) { font-size: 2rem; }
+    @include media-breakpoint-down(sm) { font-size: 1.5rem; }
+  }
+
+  :where(a) {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+
+    @include media-breakpoint-down(md) { font-size: 1.5rem; }
+    @include media-breakpoint-down(sm) { font-size: 1rem; }
+  }
+
+  img {
+    filter: brightness(65%);
+    opacity: .9;
+  }
+}
+
+.disclaimer {
+  font-size: 1.5rem;
+  color: $primary;
+
+  @include media-breakpoint-down(md) { font-size: 1.125rem; }
+}
+
+.c-metadata {
+  i {
+    font-size: 3rem;
+  }
+
+  h3 { 
+    font-size: 2rem;
+    font-weight: bold; 
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 0.3em;
+  }
+}
