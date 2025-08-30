@@ -18,3 +18,10 @@ button,
     outline-offset: 2px;
   }
 }
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100lvh;
+  overflow-x: hidden;
+}

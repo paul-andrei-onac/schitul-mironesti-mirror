@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<!--[if lte 8]><html class="pre-ie9" lang="{{ .Site.LanguageCode }}"><![endif]-->
-<!--[if gte IE 9]><!--><html class="no-js" lang="{{ .Site.LanguageCode }}" dir="{{ .Site.Language.LanguageDirection }}"><!--<![endif]-->
-{{ partial "head/head" . }}
+<!--[if lte 8]><html class="pre-ie9" lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}"><![endif]-->
+<!--[if gte IE 9]><!--><html class="no-js" lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}"><!--<![endif]-->
+{{ partial "misc/head" . }}
 
-<body class='page {{ block "body_classes" . }}{{ end }}'>
-{{ partial "google-tag-manager/gtm-body" . }}
+<body class='page {{ block "body_classes" . }}{{ end }} | overflow-x-hidden' id="top">
+  {{ partial "misc/gtm-body" . }}
+  {{ partial "misc/sprite" . }}
 
-<!--[if IE]><div class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed" style="z-index: 1000; bottom: 0;">
-  <p onClick="parentNode.remove()">Please use a modern browser for a better browsing experience.
-    <span class="float-right">X</span>
-  </p>
-</div><![endif]-->
+  <div class="site-wrapper | flex flex-col min-h-lvh overflow-x-hidden">
+    {{ partial "blocks/header" . }}
 
-{{ partial "header/header" . }}
+    <main class="site-content">
+      {{ block "main" . }}{{ end }}
+    </main>
 
-<main id="content">
-  {{ block "main" . }}{{ end }}
-</main>
+    {{ partial "blocks/footer" . }}
+  </div>
 
-{{ partial "footer/footer" . }}
-{{ partial "footer/script" . }}
-
+  {{ partial "misc/script" . }}
 </body>
 </html>

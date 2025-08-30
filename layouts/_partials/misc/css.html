@@ -1,0 +1,30 @@
+{{ $styles := resources.Get "sass/main.scss" }}  {{/* Default to main.scss */}}
+{{ $options := dict
+  "inlineImports" true
+  "transpiler" "dartsass"
+  "targetPath" "main.css"
+  "vars" site.Params.styles
+  "enableSourceMap" (not hugo.IsProduction)
+  "includePaths" (slice "node_modules")
+}}
+
+{{ if eq site.Params.transpiler "libsass" }}
+  {{ $styles = resources.Get "sass/main.scss" }}
+  {{ $options = dict
+    "inlineImports" true
+    "transpiler" "libsass"
+    "targetPath" "main.css"
+    "vars" site.Params.styles
+    "enableSourceMap" (not hugo.IsProduction)
+    "includePaths" (slice "node_modules")
+  }}
+{{ end }}
+
+{{ $styles = $styles | resources.ExecuteAsTemplate $styles.Name . | css.Sass $options }}
+
+{{ if or (eq hugo.Environment "staging") (eq hugo.Environment "production") }}
+{{ $styles = $styles | minify | fingerprint "sha384" | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" type="text/css" media="all" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
+{{ else }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" type="text/css" media="all">
+{{ end }}

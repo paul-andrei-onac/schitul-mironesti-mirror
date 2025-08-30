@@ -3,14 +3,14 @@ keywords = ["Schitul Mironesti"]
 favicon = "favicon/favicon.ico"
 googleTagManager = "GTM-59DKPVM"
 opengraph = "/og-image/schitul-mironesti.jpg"
+googleSiteVerification = "v8N6hHNhgFDp62DupEAhSFrTifD3v0MTK4D7iIJtW7k"
+
+transpiler = 'libsass'
 
 [author]
 name = "Paul-Andrei Onac"
 email = "onac.paul.andrei@gmail.com"
 link = "mailto:onac.paul.andrei@gmail.com"
-
-[verification]
-google = "v8N6hHNhgFDp62DupEAhSFrTifD3v0MTK4D7iIJtW7k"
 
 [footer]
 [footer.info]

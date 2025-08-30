@@ -1,0 +1,62 @@
+{{/* Usage:
+  {{ partial "components/image-responsive" (dict
+    "path" "images/hero/hero-image.png"
+    "class" "rounded shadow-lg"
+    "loading" "lazy"
+    "fetchpriority" "high"
+    "alt" "Hero image with mountains"
+    "widths" (slice 460 1024 1920)
+    "format" "webp"
+    "quality" 100
+    "sizes" "(max-width: 768px) 100vw, 50vw"
+  ) }}
+*/}}
+
+{{- $path := .path -}}
+{{- $class := (print (.class | default "") " select-none") -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $fetchpriority := .fetchpriority | default "high" -}}
+{{- $alt := .alt | default "" -}}
+{{- $widths := .widths | default (slice 2560) -}}
+{{- $format := .format | default "webp" -}}
+{{- $quality := .quality | default 100 -}}
+{{- $sizes := .sizes | default "(min-width: 0) 100vw" -}}
+
+{{- $imageResource := "" -}}
+{{- if (strings.HasPrefix $path "http") -}}
+  {{ with try (resources.GetRemote $path) }}
+    {{- if .Err }}
+      {{ warnf "Error fetching remote image %q: %s" $path .Err }}
+    {{- else if .Value }}
+      {{- $imageResource = .Value -}}
+    {{- end }}
+  {{ else }}
+    {{ warnf "Unable to get remote resource %q" $path }}
+  {{ end }}
+{{- else -}}
+  {{- $imageResource = resources.Get $path -}}
+{{- end }}
+
+{{ if $imageResource }}
+  {{ if eq $imageResource.MediaType.MainType "image" }}
+    {{ if eq $imageResource.MediaType.SubType "svg" }}
+      <img class='{{ $class }}' src='{{ $imageResource.RelPermalink }}' alt='{{ $alt }}' loading='{{ $loading }}' fetchpriority='{{ $fetchpriority }}' draggable='false' />
+    {{ else }}
+      {{ $srcset := slice }}
+      {{ range $width := $widths }}
+        {{- $resized := $imageResource.Resize (printf "%dx %s q%d" $width $format $quality) -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" $resized.RelPermalink $width) -}}
+      {{ end }}
+      <img class='{{ $class }}' src='{{ ($imageResource.Resize (printf "%dx %s q%d" (index $widths (sub (len $widths) 1)) $format $quality)).RelPermalink }}' alt='{{ $alt }}'
+           srcset='{{ delimit $srcset ", " }}'
+           sizes='{{ $sizes }}'
+           loading='{{ $loading }}'
+           fetchpriority='{{ $fetchpriority }}'
+           width='{{ ($imageResource.Resize (printf "%dx %s q%d" (index $widths 0) $format $quality)).Width }}'
+           height='{{ ($imageResource.Resize (printf "%dx %s q%d" (index $widths 0) $format $quality)).Height }}'
+           draggable='false' />
+    {{ end }}
+  {{ else }}
+    <img class='{{ $class }}' src='{{ $imageResource.RelPermalink }}' alt='{{ $alt }}' loading='{{ $loading }}' fetchpriority='{{ $fetchpriority }}' draggable='false' />
+  {{ end }}
+{{ end }}

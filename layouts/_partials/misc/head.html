@@ -1,0 +1,28 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>{{ if .IsHome }}{{ site.Title }} - {{ site.Params.moto }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+  <meta name="description" content='{{ if .Description }}{{ .Description }}{{ else }}{{ index site.Params (site.Language.Lang) "description" }}{{ end }}' />
+  <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
+  <meta name="google-site-verification" content="{{ site.Params.googleSiteVerification }}">
+
+  {{ partial "misc/robots" . }}
+  {{ partial "misc/preload-fonts" . }}
+  {{ partial "misc/script-critical" . }}
+
+  {{ partial "misc/css" . }}
+  {{ partial "misc/favicon" . }}
+  {{ partial "misc/redirect" . }}
+
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+
+  {{ partial "misc/canonical" . }}
+  {{ partial "misc/hreflang" . }}
+  {{ partial "misc/rss" . }}
+
+  {{ template "_internal/schema.html" . }}
+  {{ partial "misc/schema" . }}
+  {{ partial "misc/gtm-head" . }}
+</head>

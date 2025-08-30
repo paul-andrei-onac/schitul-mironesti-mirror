@@ -1,0 +1,26 @@
+{{/* Usage:
+  {{ partial "misc/preload-image" (dict
+    "path" "images/hero/hero-image.png"
+    "widths" (slice 460 1024 1920)
+    "format" "webp"
+    "quality" 80
+    "fetchpriority" "high"
+  ) }}
+*/}}
+
+{{- $path := .path -}}
+{{- $widths := .widths | default (slice 2560) -}}
+{{- $format := .format | default "webp" -}}
+{{- $quality := .quality | default 100 -}}
+{{- $fetchpriority := .fetchpriority | default "auto" -}}
+
+{{ with resources.Get $path }}
+{{- $imageResource := . -}}
+{{- $largestWidth := (index $widths (sub (len $widths) 1)) -}}
+{{- $optimizedImage := $imageResource.Resize (printf "%dx %s q%d" $largestWidth $format $quality) -}}
+<link rel="preload"
+      href="{{- $optimizedImage.RelPermalink -}}"
+      as="image"
+      type="image/{{- $format -}}"
+      fetchpriority="{{- $fetchpriority -}}" />
+{{ end }}

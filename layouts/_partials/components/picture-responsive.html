@@ -1,0 +1,88 @@
+{{/* Usage:
+  {{ partial "components/picture-responsive" (dict
+    "sources" (slice
+      (dict "path" "images/hero/hero-image.avif" "media" "(min-width: 1024px)")
+      (dict "path" "images/hero/hero-image.webp" "media" "(min-width: 640px)")
+      (dict "path" "images/hero/hero-image.png")
+    )
+    "class" "rounded shadow-md"
+    "loading" "lazy"
+    "fetchpriority" "high"
+    "alt" "A beautiful scenic hero image"
+    "widths" (slice 460 1024 1920)
+    "formats" (slice "png" "webp")
+    "quality" 100
+    "sizes" "(max-width: 1024px) 100vw, 50vw"
+  ) }}
+*/}}
+
+{{- $class := .class | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $fetchpriority := .fetchpriority | default "high" -}}
+{{- $alt := .alt | default "" -}}
+{{- $widths := .widths | default (slice 2560) -}}
+{{- $formats := .formats | default (slice "webp") -}}
+{{- $quality := .quality | default 100 -}}
+{{- $sizes := .sizes | default "(min-width: 0) 100vw" -}}
+
+{{- $sources := .sources | default slice -}}
+{{- $fallbackSource := index $sources 0 -}}
+
+<picture>
+  {{ range $source := $sources }}
+  {{- $path := $source.path -}}
+  {{- $media := $source.media | default "" -}}
+
+    {{- $imageResource := "" -}}
+    {{- if (strings.HasPrefix $path "http") -}}
+      {{ with try (resources.GetRemote $path) }}
+        {{- if .Err }}
+          {{ warnf "Error fetching remote image %q: %s" $path .Err }}
+        {{- else if .Value }}
+          {{- $imageResource = .Value -}}
+        {{- end }}
+      {{ else }}
+        {{ warnf "Unable to get remote resource %q" $path }}
+      {{ end }}
+    {{- else -}}
+      {{- $imageResource = resources.Get $path -}}
+    {{- end }}
+
+  {{ if $imageResource }}
+    {{ range $format := $formats }}
+      {{ $srcset := slice }}
+      {{ range $width := $widths }}
+        {{- $resized := $imageResource.Resize (printf "%dx %s q%d" $width $format $quality) -}}
+        {{- $srcset = $srcset | append (printf "%s %dw" $resized.RelPermalink $width) -}}
+        {{ end }}
+        <source
+          {{ if $media }}media="{{ $media }}"{{ end }}
+          type="image/{{ $format }}"
+          srcset='{{ delimit $srcset ", " }}'
+          sizes="{{ $sizes }}">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Default image (first source's first format) */}}
+  {{- $defaultPath := $fallbackSource.path -}}
+  {{- $defaultResource := "" -}}
+  {{- if (strings.HasPrefix $defaultPath "http") -}}
+    {{- $defaultResource = resources.GetRemote $defaultPath -}}
+  {{- else -}}
+    {{- $defaultResource = resources.Get $defaultPath -}}
+  {{- end -}}
+
+  {{ if $defaultResource }}
+    {{- $defaultFormat := index $formats 0 -}}
+    {{- $defaultImg := ($defaultResource.Resize (printf "%dx %s q%d" (index $widths (sub (len $widths) 1)) $defaultFormat $quality)) -}}
+    <img class="{{ $class }} select-none"
+         src="{{ $defaultImg.RelPermalink }}"
+         alt="{{ $alt }}"
+         loading="{{ $loading }}"
+         fetchpriority="{{ $fetchpriority }}"
+         draggable="false"
+         width="{{ $defaultImg.Width }}"
+         height="{{ $defaultImg.Height }}" />
+  {{ end }}
+</picture>

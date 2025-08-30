@@ -3,6 +3,7 @@
 .footer-wrapper {
   background-color: $white;
   padding: 1rem 0;
+  margin-top: auto;
 
   .footer-european {
     text-align: center;
@@ -34,7 +35,7 @@
         display: none;
       }
     }
-  
+
     a {
       color: $primary;
       text-decoration: none;
