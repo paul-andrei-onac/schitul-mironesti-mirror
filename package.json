@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf public",
-    "build": "hugo",
-    "dev": "hugo && hugo server --watch --disableFastRender",
-    "watch": "hugo server --watch --disableFastRender",
-    "prod": "hugo --minify"
+    "clean": "rm -rf public resources",
+    "build": "hugo -e development --ignoreCache",
+    "dev": "hugo server --watch --disableFastRender --ignoreCache",
+    "development": "npm run dev",
+    "prod": "hugo -e production --minify --ignoreCache --cleanDestinationDir --gc",
+    "production": "npm run prod"
   },
   "author": "Paul-Andrei Onac",
   "license": "ISC",

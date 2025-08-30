@@ -1,6 +1,21 @@
-[goldmark.parser]
-wrapStandAloneImageWithinParagraph = false
+# Documentation:
+# https://gohugo.io/configuration/languages/#language-settings
+# https://gohugo.io/configuration/markup/#table-of-contents
 
 [goldmark]
 [goldmark.renderer]
 unsafe = true
+
+[goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[goldmark.parser.attribute]
+title = true
+
+[goldmark.extensions.extras.mark]
+enable = true
+
+[tableOfContents]
+endLevel = 3
+ordered = true
+startLevel = 2

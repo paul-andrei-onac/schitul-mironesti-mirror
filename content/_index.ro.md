@@ -3,8 +3,6 @@ title: "Schitul Mironești"
 date: 2022-12-05
 draft: false
 keywords: ["Schitul Mironesti"]
-type: "other"
-sitemap_exclude: false
 
 sitemap:
   changefreq: weekly

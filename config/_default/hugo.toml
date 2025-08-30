@@ -1,5 +1,6 @@
-baseURL = "https://schitul-mironesti.ro"
+# Documentation: https://gohugo.io/configuration/introduction/#configuration-directory
 
+baseURL = "https://schitul-mironesti.ro"
 # website title
 title = "Schitul Mironești"
 
@@ -12,23 +13,32 @@ defaultcontentlanguage = "ro"
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "ro-RO"
 
+# all languages are generated in folders
+defaultContentLanguageInSubdir = false
+
 # language name ["English", "简体中文", "Français", "Polski", ...]
 LanguageName = "Română"
 
-# all languages are generated in folders
-defaultContentLanguageInSubdir = false
+# this is used to bail out of recursive content generation
+timeout = '200s'
+
+# cleans the destination dir before building
+cleanDestinationDir = true
 
 # whether to use robots.txt
 enableRobotsTXT = true
 
+# to make the .Lastmod function work
+enableGitInfo = true
+
+# whether to show the table of contents in the article
+tableOfContents = true
+
 # whether to show the framework used in header
-disableHugoGeneratorInject = false
+disableHugoGeneratorInject  = true
 
 # whether to use emoji code
 enableEmoji = true
 
 # whether to use shortcodes inside other shortcodes
 enableInlineShortcodes = true
-
-# wather to use taxonomies or not
-disableKinds = ["taxonomy", "term"]

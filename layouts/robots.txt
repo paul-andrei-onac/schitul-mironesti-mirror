@@ -1,5 +1,6 @@
 User-agent: *
 
+{{ if eq hugo.Environment "production" }}
 Allow: /
 Allow: */png/*
 Allow: */jpg/*
@@ -7,9 +8,12 @@ Allow: */gif/*
 Allow: */js/*
 Allow: */css/*
 Allow: */webp/*
+{{ end }}
 
+{{ if eq hugo.Environment "production" }}
 Disallow: /tags/
 Disallow: /categories/
+{{ end }}
 
 Host: {{ .Permalink }}
 Sitemap: {{ "/sitemap.xml" | absLangURL }}

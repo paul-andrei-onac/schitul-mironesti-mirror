@@ -1,0 +1,4 @@
+# Documentation: https://gohugo.io/configuration/taxonomies/
+
+# wather to use taxonomies or not
+disableKinds = ["taxonomy", "term"]

@@ -1,0 +1,4 @@
+# Documentation: https://gohugo.io/configuration/page/
+
+nextPrevInSectionSortOrder = 'desc'
+nextPrevSortOrder = 'desc'

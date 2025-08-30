@@ -1,0 +1,8 @@
+# Documentation: https://gohugo.io/configuration/outputs/
+
+home = ["HTML", "RSS"]
+page = ['html']
+rss = ['rss']
+section = ['html', 'rss']
+taxonomy = ['html', 'rss']
+term = ['html', 'rss']

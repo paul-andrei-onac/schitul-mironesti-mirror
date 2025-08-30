@@ -1,14 +1,33 @@
+# Documentation:
+# https://gohugo.io/configuration/introduction/#configuration-directory
+# https://gohugo.io/configuration/module/#mounts
+
 [hugoVersion]
 extended = true
 min = "0.149.0"
 max = "0.149.0"
 
 [[mounts]]
-source = "assets"
-target = "assets"
+source = 'assets'
+target = 'assets'
 [[mounts]]
-source = "static"
-target = "static"
+source = 'content'
+target = 'content'
+[[mounts]]
+source = 'data'
+target = 'data'
+[[mounts]]
+source = 'i18n'
+target = 'i18n'
+[[mounts]]
+source = 'layouts'
+target = 'layouts'
+[[mounts]]
+source = 'static'
+target = 'static'
+[[mounts]]
+source = 'hugo_stats.json'
+target = 'assets/watching/hugo_stats.json'
 [[mounts]]
 source = "node_modules/bootstrap/scss"
 target = "assets/sass/vendors/bootstrap"

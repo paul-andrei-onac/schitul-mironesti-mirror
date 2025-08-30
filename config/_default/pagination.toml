@@ -1,0 +1,5 @@
+# Documentation: https://gohugo.io/configuration/pagination/
+
+disableAliases = true
+pagerSize = 6
+path = 'page'

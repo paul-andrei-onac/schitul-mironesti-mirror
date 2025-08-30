@@ -1,0 +1,8 @@
+# Documentation: https://gohugo.io/configuration/permalinks/
+
+[page]
+'basic-page' = '/:slugorcontentbasename/'
+
+[taxonomy]
+
+[term]
