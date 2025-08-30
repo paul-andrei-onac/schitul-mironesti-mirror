@@ -1,4 +1,3 @@
-{{ if and (not .Site.IsServer) hugo.IsProduction }}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -29,7 +28,7 @@
       ],
       "opens": "00:00",
       "closes": "23:59"
-    } 
+    }
   }
 </script>
 
@@ -107,5 +106,4 @@
     "dateModified": "{{ now.Format "2006-01-02" }}"
   }
 </script>
-{{ end }}
 {{ end }}

@@ -1,4 +1,4 @@
-{{ if and (not .Site.IsServer) hugo.IsProduction }}
+{{ if eq hugo.Environment "production" }}
   {{ $script := resources.Get "js/index.js" | js.Build "main.js" | fingerprint | minify }}
   <script src="{{ $script.RelPermalink }}" async></script>
 {{ else }}
