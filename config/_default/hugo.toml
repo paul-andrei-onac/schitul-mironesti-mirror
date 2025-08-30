@@ -40,5 +40,5 @@ disableHugoGeneratorInject  = false
 # whether to use emoji code
 enableEmoji = true
 
-# whether to use shortcodes inside other shortcodes
-enableInlineShortcodes = true
+# transliterate non-ASCII characters when generating URLs
+removePathAccents = true
