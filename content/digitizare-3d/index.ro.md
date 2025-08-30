@@ -5,7 +5,6 @@ draft: false
 keywords: ["Schitul Mironesti"]
 type: "page"
 layout: "digitizare"
-sitemap_exclude: false
 
 sitemap:
   changefreq: weekly

@@ -7,13 +7,11 @@ type: "page"
 layout: "proiect1"
 url: "proiect-smis-126844"
 slug: "proiect-smis-126844"
-sitemap_exclude: false
 
 sitemap:
   changefreq: weekly
   filename: sitemap.xml
   priority: 1
-
 ---
 
 **Numele proiectului: "CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE"**
