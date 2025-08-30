@@ -1,11 +1,18 @@
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-  <title>{{ if .IsHome }}{{ site.Title }} - {{ site.Params.moto }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-  <meta name="description" content='{{ if .Description }}{{ .Description }}{{ else }}{{ index site.Params (site.Language.Lang) "description" }}{{ end }}' />
+  <title>{{ if .IsHome }} {{ .Title }} {{ else }} {{ .Title | plainify }} | {{ site.Title }} {{ end }}</title>
+  <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}">
   <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
   <meta name="google-site-verification" content="{{ site.Params.googleSiteVerification }}">
+  <meta name="author" content="{{ site.Params.Author.name }}">
+
+  {{ $keywords := .Site.Params.keywords }}
+  {{ $mdKeywords := .Params.keywords}}
+  {{ range .Params.keywords }}{{ $keywords = $mdKeywords | append . }}{{ end }}
+  <meta name="keywords" content='{{ if .Params.keywords }}{{ delimit (uniq $keywords) ", " }}{{ else if .Site.Params.keywords }}{{ delimit (uniq $keywords) ", " }}{{ end }}'>
 
   {{ partial "misc/robots" . }}
   {{ partial "misc/preload-fonts" . }}
@@ -16,6 +23,7 @@
   {{ partial "misc/redirect" . }}
 
   {{ template "_internal/opengraph.html" . }}
+  {{ partial "misc/opengraph" . }}
   {{ template "_internal/twitter_cards.html" . }}
 
   {{ partial "misc/canonical" . }}
