@@ -35,7 +35,7 @@ enableGitInfo = true
 tableOfContents = true
 
 # whether to show the framework used in header
-disableHugoGeneratorInject  = true
+disableHugoGeneratorInject  = false
 
 # whether to use emoji code
 enableEmoji = true
