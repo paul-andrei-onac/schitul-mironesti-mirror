@@ -1,6 +1,6 @@
 # Documentation: https://gohugo.io/configuration/introduction/#configuration-directory
 
-baseURL = "https://schitul-mironesti.ro"
+baseURL = "http://localhost:1313/"
 # website title
 title = "Schitul Mironești"
 
