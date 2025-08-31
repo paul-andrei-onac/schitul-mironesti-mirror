@@ -1,3 +1,5 @@
+# Documentation: https://gohugo.io/configuration/menus/
+
 # Main Menu
 [[main]]
 name        = "Acasă"
@@ -17,7 +19,7 @@ pre         = ""
 post        = ""
 title       = "Istoric"
 parent      = ""
-pageRef     = "/istoric"
+pageRef     = "history"
 identifier  = ""
 weight      = 20
 
@@ -28,7 +30,7 @@ pre         = ""
 post        = ""
 title       = "Proiect SMIS 126844"
 parent      = ""
-pageRef     = "/proiect1"
+pageRef     = "project-1"
 identifier  = ""
 weight      = 30
 
@@ -39,7 +41,7 @@ pre         = ""
 post        = ""
 title       = "Digitizare 3D"
 parent      = ""
-pageRef     = "/digitizare-3d"
+pageRef     = "digitisation"
 identifier  = ""
 weight      = 40
 
@@ -50,7 +52,7 @@ pre         = ""
 post        = ""
 title       = "Galerie"
 parent      = ""
-pageRef     = "/galerie"
+pageRef     = "gallery"
 identifier  = ""
 weight      = 50
 
@@ -61,6 +63,6 @@ pre         = ""
 post        = ""
 title       = "Contact"
 parent      = ""
-pageRef     = "/contact"
+pageRef     = "contact"
 identifier  = ""
 weight      = 60

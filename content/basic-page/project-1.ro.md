@@ -3,15 +3,8 @@ title: "Proiect <span>SMIS</span> 126844"
 date: 2023-01-22
 draft: false
 keywords: ["Schitul Mironesti"]
-type: "page"
-layout: "proiect1"
-url: "proiect-smis-126844"
-slug: "proiect-smis-126844"
-
-sitemap:
-  changefreq: weekly
-  filename: sitemap.xml
-  priority: 1
+slug: "/proiect-smis-126844/"
+layout: "project-1"
 ---
 
 **Numele proiectului: "CONSOLIDARE, RESTAURARE BISERICA "SF. NICOLAE", MIRONEȘTI, comuna GOȘTINARI, REALIZARE CORP ANEXĂ -- LUMÂNĂRAR/ PANGAR, GRUP SANITAR, SPAȚIU TEHNIC ȘI TURN CLOPOTNIȚĂ, AMENAJARE INCINTĂ, REALIZARE ILUMINAT INTERIOR/ EXTERIOR DE AMBIENT ȘI ARHITECTURAL, REALIZARE ÎMPREJMUIRI ȘI ACCESE PRINCIPALE/ SECUNDARE"**
