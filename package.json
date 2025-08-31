@@ -19,6 +19,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "hugo-extended": "^0.119.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "vanilla-cookieconsent": "^3.1.0"
   }
 }
