@@ -1,30 +1,30 @@
-{{ define "body_classes" }} istoric-page {{ end }}
+{{- define "bodyClasses" -}} page-type-{{ .Type }} {{ .Kind }}-{{ .Type }} {{ .Page.LinkTitle | plainify | urlize -}} {{- end -}}
 
-{{ define "main"}}
+{{ define "main" }}
 
-<section class="istoric-wrapper space-top space-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        {{ partial "titles" . }}
+  <section class="istoric-wrapper space-top space-bottom" aria-label="Section - {{ .LinkTitle | urlize }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          {{ partial "blocks/titles" . }}
+        </div>
       </div>
-    </div>
-    <div class="row space-top">
-      <div class="col-lg-6">
-        {{ .Content }}
-      </div>
-      <div class="col-lg-6 text-center">
-        {{ with .Params.page.image }}
-        {{ range $index, $items := first 2 .items }}
-        <img class="img-fluid mb-3" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}"> 
-        {{ end }}
-        {{ end }}
-        <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
-          <a class="btn-prime" href="/proiect-smis-126844" role="button">Vezi Proiect SMIS</a>
+      <div class="row space-top">
+        <div class="col-lg-6">
+          {{ .Content }}
+        </div>
+        <div class="col-lg-6 text-center">
+          {{ with .Params.page.image }}
+            {{ range $index, $items := first 2 .items }}
+              <img class="img-fluid mb-3" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}">
+            {{ end }}
+          {{ end }}
+          <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
+            <a class="btn-prime" href="/proiect-smis-126844" role="button">Vezi Proiect SMIS</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 {{ end }}

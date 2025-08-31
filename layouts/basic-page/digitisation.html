@@ -1,20 +1,20 @@
-{{ define "body_classes" }} digitalizare {{ end }}
+{{- define "bodyClasses" -}} page-type-{{ .Type }} {{ .Kind }}-{{ .Type }} {{ .Page.LinkTitle | plainify | urlize -}} {{- end -}}
 
 {{ define "main" }}
 
-<section class="project-wrapper space-top space-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        {{ partial "titles" . }}
+  <section class="project-wrapper space-top space-bottom" aria-label="Section - {{ .LinkTitle | urlize }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          {{ partial "blocks/titles" . }}
+        </div>
+      </div>
+      <div class="row space-top">
+        <div class="col-md-10 mx-auto">
+          {{ .Content }}
+        </div>
       </div>
     </div>
-    <div class="row space-top">
-      <div class="col-md-10 mx-auto">
-        {{ .Content }}
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 {{ end }}

@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col-12">
         <p class="footer-info mt-3">“Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă invităm să vizitaţi
-          <a href="https://www.fonduri-ue.ro" target="_blank">{{ partial "sr-only" . }}"www.fonduri-ue.ro"</a> și <a href="https://mfe.gov.ro" target="_blank">{{ partial "sr-only" . }}"www.mfe.gov.ro"</a>
+          <a href="https://www.fonduri-ue.ro" target="_blank">{{ partial "blocks/sr-only" . }}"www.fonduri-ue.ro"</a> și <a href="https://mfe.gov.ro" target="_blank">{{ partial "blocks/sr-only" . }}"www.mfe.gov.ro"</a>
         </p>
       </div>
     </div>
@@ -28,7 +28,7 @@
       <div class="footer-links">
         {{ range .Site.Params.footer.links }}
           <a href="{{ .url }}" target="_blank">
-            {{ partial "sr-only" . }}
+            {{ partial "blocks/sr-only" . }}
             {{ .title }}
           </a>
           <span>|</span>

@@ -7,4 +7,4 @@ slug: "/digitizare-3d/"
 layout: "digitisation"
 ---
 
-{{< digitizare >}}
+{{< digitisation >}}

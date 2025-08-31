@@ -1,35 +1,35 @@
-{{ define "body_classes" }} primary-page {{ end }}
+{{- define "bodyClasses" -}} page-type-{{ .Type }} {{ .Kind }}-{{ .Type }} {{ .Page.LinkTitle | plainify | urlize -}} {{- end -}}
 
 {{ define "main" }}
 
-<section class="homepage-wrapper space-top space-bottom">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="homepage-image mb-3">
-          {{ with .Params.page.image }}
-          {{ range $index, $items := first 1 .items }}
-              <img class="img-fluid" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}"> 
+  <section class="homepage-wrapper space-top space-bottom" aria-label="Section - {{ .LinkTitle | urlize }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="homepage-image mb-3">
+            {{ with .Params.page.image }}
+              {{ range $index, $items := first 1 .items }}
+                <img class="img-fluid" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}">
+              {{ end }}
             {{ end }}
-          {{ end }}
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="title-area">
-          {{ with .Params.page }}
-          <h1 class="sec-title">{{ .title | safeHTML }}</h1>
-          {{ end }}
-          <hr class="m-0">
-        </div>
-        <div class="text-area">
-          <div class="py-3">{{ .Content }}</div>
-          <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
-            <a class="btn-prime" href="/proiect-smis-126844" role="button">Vezi Proiect SMIS</a>
+        <div class="col-lg-6">
+          <div class="title-area">
+            {{ with .Params.page }}
+              <h1 class="sec-title">{{ .title | safeHTML }}</h1>
+            {{ end }}
+            <hr class="m-0">
+          </div>
+          <div class="text-area">
+            <div class="py-3">{{ .Content }}</div>
+            <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">
+              <a class="btn-prime" href="/proiect-smis-126844" role="button">Vezi Proiect SMIS</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 {{ end }}

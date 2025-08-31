@@ -6,7 +6,7 @@
           {{ with .Site.Data.logos }}
             {{ range $index, $items := .items }}
               <a href="{{ .url }}" target="_blank">
-                {{ partial "sr-only" . }}
+                {{ partial "blocks/sr-only" . }}
                 <img class="img-fluid" src="{{ .img }}" alt="{{ .title }}" title="{{ .title }}">
               </a>
             {{ end }}
