@@ -30,13 +30,13 @@ source = 'hugo_stats.json'
 target = 'assets/watching/hugo_stats.json'
 [[mounts]]
 source = "node_modules/bootstrap/scss"
-target = "assets/sass/vendors/bootstrap"
+target = "assets/styles/vendors/bootstrap"
 [[mounts]]
 source = "node_modules/bootstrap/dist/js"
 target = "assets/js/vendors/bootstrap"
 [[mounts]]
 source = "node_modules/@fortawesome/fontawesome-free/scss"
-target = "assets/sass/vendors/fontawesome"
+target = "assets/styles/vendors/fontawesome"
 [[mounts]]
 source = "node_modules/@fortawesome/fontawesome-free/webfonts"
 target = "static/webfonts"

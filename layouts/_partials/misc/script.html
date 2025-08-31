@@ -2,8 +2,8 @@
   const baseURL = "{{ site.BaseURL | safeJS }}";
 </script>
 
-{{ with resources.Get "js/main.js" }}
-  {{ $templated := . | resources.ExecuteAsTemplate "js/main.js" . }}
+{{ with resources.Get "scripts/main.js" }}
+  {{ $templated := . | resources.ExecuteAsTemplate "scripts/main.js" . }}
   {{ $opts := dict
     "minify" (not hugo.IsDevelopment)
     "sourceMap" (cond hugo.IsDevelopment "external" "")

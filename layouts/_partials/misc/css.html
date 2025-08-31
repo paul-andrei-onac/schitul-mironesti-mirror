@@ -1,4 +1,4 @@
-{{ $styles := resources.Get "sass/main.scss" }}  {{/* Default to main.scss */}}
+{{ $styles := resources.Get "styles/main.scss" }}  {{/* Default to main.scss */}}
 {{ $options := dict
   "inlineImports" true
   "transpiler" "dartsass"
@@ -9,7 +9,7 @@
 }}
 
 {{ if eq site.Params.transpiler "libsass" }}
-  {{ $styles = resources.Get "sass/main.scss" }}
+  {{ $styles = resources.Get "styles/main-libsass.scss" }}
   {{ $options = dict
     "inlineImports" true
     "transpiler" "libsass"

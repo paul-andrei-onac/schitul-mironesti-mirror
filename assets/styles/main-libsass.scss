@@ -17,9 +17,7 @@
 
 @import "abstracts/_variables";
 @import "abstracts/placeholders";
-@import "vendors/_bootstrap";
-@import "vendors/_fontawesome";
-@import "node_modules/@fancyapps/ui/dist/fancybox";
+@import "vendors/index";
 
 //---------------------------------------------
 // 2. Resetting properties
@@ -38,22 +36,22 @@ body {
 // 3. General
 //---------------------------------------------
 
-@import "core/_all";
-@import "base/_all";
+@import "core/index";
+@import "base/index";
 
 //---------------------------------------------
 // 4. Components
 //---------------------------------------------
 
-@import "components/_all";
-@import "pages/_all";
+@import "components/index";
+@import "pages/index";
 
 //---------------------------------------------
 // 5. Sections
 //---------------------------------------------
 
-@import "layout/_all";
-@import "utilities/all";
+@import "layout/index";
+@import "utilities/index";
 
 @view-transition {
   navigation: auto;
