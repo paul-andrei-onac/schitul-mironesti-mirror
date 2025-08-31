@@ -54,3 +54,7 @@ body {
 
 @import "layout/_all";
 @import "utilities/all";
+
+@view-transition {
+  navigation: auto;
+}
