@@ -10,14 +10,25 @@
   </ul>
   <div class="tab-content" id="pills-tabContent">
     {{ range $index, $item := .items }}
-      <div class="tab-pane fade {{ if eq $index 0 }} active show {{ end }}" id="{{ anchorize $item.title }}-content-{{ $index }}" role="tabpanel" aria-labelledby="{{ anchorize $item.title }}-tab-{{ $index }}"
-        tabindex="0">
+      <div class="tab-pane fade {{ if eq $index 0 }} active show {{ end }}" id="{{ anchorize $item.title }}-content-{{ $index }}" role="tabpanel" aria-labelledby="{{ anchorize $item.title }}-tab-{{ $index }}">
         <div class="gallery-wrapper style2">
           {{ range $contentIndex, $content := $item.content }}
-            <a data-fancybox="gallery" data-src="{{ $content.image2x }}"
-              data-srcset="{{ $content.image2x }}, {{ $content.image }}" href="javascript:void(0)">
-              <img class="img-fluid rounded" src="{{ $content.image }}"
-                srcset="{{ $content.image }} 1x, {{ $content.image2x }} 2x" alt="{{ $content.title | markdownify }}">
+            {{ $image := resources.Get $content.image }}
+            {{ $processedImage := $image.Resize "1300x webp" }}
+            <a data-fancybox="gallery" data-src="{{ $processedImage.RelPermalink }}" href="javascript:void(0)" draggable="false">
+              {{ partial "components/image-responsive" (dict
+                "path" $content.image
+                "class" "img-fluid rounded"
+                "alt" $content.title
+                "widths" (slice 550 300 332 255 210 242)
+                "sizes" (printf "(max-width: 575px) 98vw, (max-width: 576px) %s, (max-width: 768px) %s, (max-width: 992px) %s, (max-width: 1200px) %s, (max-width: 1400px) %s"
+                (printf "%.3frem" (div 242 16.0))
+                (printf "%.3frem" (div 332 16.0))
+                (printf "%.3frem" (div 210 16.0))
+                (printf "%.3frem" (div 255 16.0))
+                (printf "%.3frem" (div 300 16.0))
+                )
+              ) }}
             </a>
           {{ end }}
         </div>
