@@ -1,5 +1,17 @@
 <div class="c-digitizare mb-3">
-  <img src="/gallery/inaugurare/1.jpeg" alt="Biserica Sf. Ierarh Nicolae din Mironești">
+  {{ partial "components/image-responsive" (dict
+    "path" "./images/gallery/inaugurare/1.jpeg"
+    "class" "img-fluid w-100"
+    "alt" "Biserica Sf. Ierarh Nicolae din Mironești"
+    "widths" (slice 550 516 576 776 926 1076)
+    "sizes" (printf "(max-width: 575px) 98vw, (max-width: 576px) %s, (max-width: 768px) %s, (max-width: 992px) %s, (max-width: 1200px) %s, (max-width: 1400px) %s"
+    (printf "%.3frem" (div 516 16.0))
+    (printf "%.3frem" (div 576 16.0))
+    (printf "%.3frem" (div 776 16.0))
+    (printf "%.3frem" (div 926 16.0))
+    (printf "%.3frem" (div 1076 16.0))
+    )
+  ) }}
   <div class="c-digitalizare-body">
     <h2 class="c-digitizare-title">Biserica Sf. Ierarh Nicolae din Mironești</h2>
     <a class="c-digitalizare-link | btn btn-prime" href="https://arenacad.websharecloud.com/?v=pv&t=p:default,c:panoramaview,h:f,m:t,pr:f&pv=pv1&pv1=vt:p,u:8fc8c293-97b4-46dd-ad28-79a227692c32,cf:65.00,dh:f,st:f,p:6.16764,t:0.55226&p=p:digitizare-gostinari-schitul-mironesti,share:5ef2a8f7-cfa9-4257-afc6-798a1b5695e9" tabindex="0" role="link" draggable="false" rel="nofollow noreferrer" target="_blank">Vezi Model Interactiv Scanare 3D</a>
@@ -42,7 +54,7 @@
     </div>
   </div>
 
-  <div class="col-xl-4 mx-auto mt-2 mt-md-3 text-center"> 
+  <div class="col-xl-4 mx-auto mt-2 mt-md-3 text-center">
     <a class="btn btn-prime" href="\docs\digitalizare-schitul-mironesti-metadate.pdf" download="Digitizare Gostinari Schitul Mironesti_fisier metadate">Descarcă Raport Metadate</a>
   </div>
 </div>

@@ -13,13 +13,9 @@ page:
   image:
     items:
       - title: "Schitul Mironești"
-        link: ""
-        image: "/carousel/gallery-1.jpg"
-        image2x: "/carousel/gallery-1@2x.jpg"
+        image: "/images/featured/gallery-1@2x.jpg"
       - title: "Schitul Mironești"
-        link: ""
-        image: "/carousel/gallery-2.jpg"
-        image2x: "/carousel/gallery-2@2x.jpg"
+        image: "/images/featured/gallery-2@2x.jpg"
 ---
 
 **Satul Mironeşti**, după vechea sa denumire „Coiani" (Coeni), a făcut parte din domeniul (moşia Coaini) a uneia dintre ramurile familiei boierilor Craioveşti. O primă biserică a fost ridicată în cadrul Moșiei de la Coiani, de marele ban Neagoe şi de soţia acestuia Anca din Coiani, înaintea anului 1563. Mai târziu, în perioada anului 1668, când şi-au avut aici reşedinţa Ilinca ( fiica cea mică a domnitorului Radu Şerban) şi soţul ei, postelnicul Constantin Cantacuzino, s-a renunţat la vechea construcţie a bisericii, fiind construită una nouă, ctitori fiind Ilinca şi fiii săi.

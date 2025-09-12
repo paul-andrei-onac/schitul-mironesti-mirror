@@ -16,7 +16,19 @@
         <div class="col-lg-6 text-center">
           {{ with .Params.page.image }}
             {{ range $index, $items := first 2 .items }}
-              <img class="img-fluid mb-3" src="{{ .image }}" srcset="{{ .image }} 1x, {{ .image2x }} 2x" alt="{{ .title | markdownify }}">
+              {{ partial "components/image-responsive" (dict
+                "path" .image
+                "class" "img-fluid mb-3 w-100"
+                "alt" (.title | markdownify)
+                "widths" (slice 550 516 696 455 545 635)
+                "sizes" (printf "(max-width: 575px) 98vw, (max-width: 576px) %s, (max-width: 768px) %s, (max-width: 992px) %s, (max-width: 1200px) %s, (max-width: 1400px) %s"
+                (printf "%.3frem" (div 516 16.0))
+                (printf "%.3frem" (div 696 16.0))
+                (printf "%.3frem" (div 455 16.0))
+                (printf "%.3frem" (div 545 16.0))
+                (printf "%.3frem" (div 635 16.0))
+                )
+              ) }}
             {{ end }}
           {{ end }}
           <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3">

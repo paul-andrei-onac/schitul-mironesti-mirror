@@ -13,13 +13,7 @@ page:
   image:
     items:
       - title: "Schitul Mironești"
-        link: ""
-        image: "/carousel/gallery-1.jpg"
-        image2x: "/carousel/gallery-1@2x.jpg"
-      - title: "Schitul Mironești"
-        link: ""
-        image: "/carousel/gallery-2.jpg"
-        image2x: "/carousel/gallery-2@2x.jpg"
+        image: "/images/featured/gallery-1@2x.jpg"
 ---
 
 **Biserica Sf. Ierarh Nicolae din Mironești**, se află la sud de râul Argeș, în apropierea Mânăstirii Comana, a ruinelelor curții boierești și Conacului Radu Șerban, dar și a schitului Barbu-Bellu de la Gostinari. Biserica „Sf. Nicolae” din Mironești 
