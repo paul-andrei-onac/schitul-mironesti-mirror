@@ -4,8 +4,7 @@
 
 [hugoVersion]
 extended = true
-min = "0.149.0"
-max = "0.149.0"
+min = "0.150.0"
 
 [[mounts]]
 source = 'assets'
