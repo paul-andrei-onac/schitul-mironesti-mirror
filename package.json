@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf public resources",
-    "build": "hugo -b $CF_PAGES_URL --minify",
+    "build": "hugo --minify",
+    "preview": "hugo -b $CF_PAGES_URL --minify",
     "dev": "hugo server --watch --disableFastRender --ignoreCache --cleanDestinationDir --gc",
     "development": "npm run dev",
     "prod": "hugo -e production --minify --ignoreCache --cleanDestinationDir --gc",
