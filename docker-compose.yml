@@ -29,7 +29,7 @@ services:
           npm install --check-files
         fi
         echo 'Running Hugo server...'
-        hugo server --bind 0.0.0.0 --disableLiveReload
+        hugo server --bind=0.0.0.0 --disableLiveReload --baseURL="http://schitul-mironesti.localhost/" --appendPort=false
       "
     labels:
       - "traefik.enable=true"
