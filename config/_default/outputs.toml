@@ -1,6 +1,6 @@
 # Documentation: https://gohugo.io/configuration/outputs/
 
-home = ["HTML", "RSS", "JSON"]
+home = ['html', 'rss', 'json']
 page = ['html']
 rss = ['rss']
 section = ['html', 'rss']
