@@ -3,8 +3,7 @@
 # https://gohugo.io/configuration/module/#mounts
 
 [hugoVersion]
-extended = true
-min = "0.152.2"
+min = "0.160.0"
 
 [[mounts]]
 source = 'assets'
