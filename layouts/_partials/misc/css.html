@@ -1,30 +1,22 @@
-{{ $styles := resources.Get "styles/main.scss" }}  {{/* Default to main.scss */}}
-{{ $options := dict
-  "inlineImports" true
-  "transpiler" "dartsass"
-  "targetPath" "main.css"
-  "vars" site.Params.styles
-  "enableSourceMap" (not hugo.IsProduction)
-  "includePaths" (slice "node_modules")
-}}
-
-{{ if eq site.Params.transpiler "libsass" }}
-  {{ $styles = resources.Get "styles/main-libsass.scss" }}
-  {{ $options = dict
-    "inlineImports" true
-    "transpiler" "libsass"
+{{ with resources.Get "styles/main.scss" }}
+  {{ $sassOptions := dict
+    "transpiler" "dartsass"
+    "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
     "targetPath" "main.css"
     "vars" site.Params.styles
-    "enableSourceMap" (not hugo.IsProduction)
+    "enableSourceMap" hugo.IsDevelopment
     "includePaths" (slice "node_modules")
+    "silenceDeprecations" "import"
+    "silenceDependencyDeprecations" true
   }}
-{{ end }}
 
-{{ $styles = $styles | resources.ExecuteAsTemplate $styles.Name . | css.Sass $options }}
-
-{{ if or (eq hugo.Environment "staging") (eq hugo.Environment "production") }}
-{{ $styles = $styles | minify | fingerprint "sha384" | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" type="text/css" media="all" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
-{{ else }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" type="text/css" media="all">
+  {{ with . | css.Sass $sassOptions }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="all" />
+    {{ else }}
+      {{ with . | fingerprint "sha384" | resources.PostProcess }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="all" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}

@@ -26,15 +26,13 @@ target = 'static'
 [[mounts]]
 source = 'hugo_stats.json'
 target = 'assets/watching/hugo_stats.json'
+
 [[mounts]]
 source = "node_modules/bootstrap/scss"
 target = "assets/styles/vendors/bootstrap"
 [[mounts]]
 source = "node_modules/bootstrap/dist/js"
 target = "assets/js/vendors/bootstrap"
-[[mounts]]
-source = "node_modules/@fortawesome/fontawesome-free/scss"
-target = "assets/styles/vendors/fontawesome"
 [[mounts]]
 source = "node_modules/@fortawesome/fontawesome-free/webfonts"
 target = "static/webfonts"
