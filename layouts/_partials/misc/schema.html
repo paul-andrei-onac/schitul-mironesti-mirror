@@ -6,7 +6,7 @@
     "@id": {{ site.BaseURL | safeURL }},
     "url": {{ site.BaseURL | safeURL }},
     "description": "{{ site.Params.Description }}",
-    "image": {{ .Site.Data.og_image.image }},
+    "image": {{ hugo.Data.og_image.image }},
     "telephone": "{{ .Site.Params.footer.contactInfo.phone }}",
     "address": {
       "@type": "PostalAddress",
