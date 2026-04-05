@@ -11,13 +11,13 @@ copyright = "© 2023 Schitul Mironești"
 defaultcontentlanguage = "ro"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "ro-RO"
+locale = "ro-RO"
 
 # all languages are generated in folders
 defaultContentLanguageInSubdir = false
 
 # language name ["English", "简体中文", "Français", "Polski", ...]
-LanguageName = "Română"
+label = "Română"
 
 # this is used to bail out of recursive content generation
 timeout = '200s'

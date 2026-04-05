@@ -13,7 +13,7 @@
       "streetAddress": "{{ .Site.Params.footer.contactInfo.address }}",
       "addressLocality": "{{ .Site.Params.footer.contactInfo.city }}",
       "postalCode": "{{ .Site.Params.footer.contactInfo.postalCode }}",
-      "addressCountry": "{{ .Site.Language | upper }}"
+      "addressCountry": "{{ .Site.Language.Locale | upper }}"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -41,7 +41,7 @@
     "url": {{ site.BaseURL | safeURL }},
     "name": "{{ site.Title }}",
     "description": "{{ site.Params.description }}",
-    "inLanguage": "{{ site.LanguageCode }}",
+    "inLanguage": "{{ .Site.Language.Locale }}",
     "thumbnailUrl": {{ site.Params.logo | replaceRE "^static/" "" | absURL | safeURL }},
     "license": "{{ site.Copyright }}"
   }
@@ -62,7 +62,7 @@
         "addressLocality": "{{ .Site.Params.footer.contactInfo.city }}",
         "streetAddress": "{{ .Site.Params.footer.contactInfo.street }}",
         "postalCode": "{{ .Site.Params.footer.contactInfo.postalCode }}",
-        "addressCountry": "{{ .Site.Language | upper }}",
+        "addressCountry": "{{ .Site.Language.Locale | upper }}",
         "addressRegion": "{{ .Site.Params.addressRegion }}"
       },
     "sameAs": [

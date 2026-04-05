@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12">
         <div class="header-grid mb-2">
-          {{ with .Site.Data.logos }}
+          {{ with hugo.Data.logos }}
             {{ range $index, $items := .items }}
               <a href="{{ .url }}" target="_blank">
                 {{ partial "blocks/sr-only" . }}

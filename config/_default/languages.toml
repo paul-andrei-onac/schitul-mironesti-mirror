@@ -1,7 +1,7 @@
 # Documentation: https://gohugo.io/configuration/languages/#language-settings
 
 [ro]
-weight = 10
-languageCode = "ro-RO"
-languageName = "Română"
-languageDirection = "ltr"
+direction = 'ltr'
+label = 'Română'
+locale = 'ro'
+weight = 1
